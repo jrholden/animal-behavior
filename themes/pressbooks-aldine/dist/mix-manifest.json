@@ -1,0 +1,19 @@
+{
+    "/scripts/aldine.js": "/scripts/aldine.js",
+    "/scripts/call-to-action.js": "/scripts/call-to-action.js",
+    "/scripts/catalog-admin.js": "/scripts/catalog-admin.js",
+    "/scripts/customizer.js": "/scripts/customizer.js",
+    "/scripts/customizer-toggle.js": "/scripts/customizer-toggle.js",
+    "/scripts/page-section.js": "/scripts/page-section.js",
+    "/styles/editor.css": "/styles/editor.css",
+    "/styles/aldine.css": "/styles/aldine.css",
+    "/fonts/pressbooks-theme.woff": "/fonts/pressbooks-theme.woff",
+    "/images/banner.jpg": "/images/banner.jpg",
+    "/images/catalog-header.jpg": "/images/catalog-header.jpg",
+    "/images/header.jpg": "/images/header.jpg",
+    "/images/left-arrow.svg": "/images/left-arrow.svg",
+    "/images/logo.svg": "/images/logo.svg",
+    "/images/pb.svg": "/images/pb.svg",
+    "/images/right-arrow.svg": "/images/right-arrow.svg",
+    "/images/yt_icon_mono_dark.png": "/images/yt_icon_mono_dark.png"
+}

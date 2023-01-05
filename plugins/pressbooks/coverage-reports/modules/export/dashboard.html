@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/modules/export</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">modules</a></li>
+         <li class="breadcrumb-item"><a href="index.html">export</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="odt/class-odt.php.html#11">Pressbooks\Modules\Export\Odt\Odt</a></td><td class="text-right">1%</td></tr>
+       <tr><td><a href="class-export.php.html#33">Pressbooks\Modules\Export\Export</a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#9">Pressbooks\Modules\Export\Prince\Filters</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#11">Pressbooks\Modules\Export\Prince\Docraptor</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#31">Pressbooks\Modules\Export\Epub\Epub</a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#14">Pressbooks\Modules\Export\WordPress\Wxr</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="class-table.php.html#17">Pressbooks\Modules\Export\Table</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#32">Pressbooks\Modules\Export\HTMLBook\HTMLBook</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#25">Pressbooks\Modules\Export\Xhtml\Xhtml11</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#14">Pressbooks\Modules\Export\Prince\Pdf</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#12">Pressbooks\Modules\Export\ThinCC\WebLinks</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="epub/class-epub.php.html#31">Pressbooks\Modules\Export\Epub\Epub</a></td><td class="text-right">3989</td></tr>
+       <tr><td><a href="class-export.php.html#33">Pressbooks\Modules\Export\Export</a></td><td class="text-right">3310</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#11">Pressbooks\Modules\Export\Odt\Odt</a></td><td class="text-right">2169</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#32">Pressbooks\Modules\Export\HTMLBook\HTMLBook</a></td><td class="text-right">1080</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#25">Pressbooks\Modules\Export\Xhtml\Xhtml11</a></td><td class="text-right">862</td></tr>
+       <tr><td><a href="class-table.php.html#17">Pressbooks\Modules\Export\Table</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#11">Pressbooks\Modules\Export\Prince\Docraptor</a></td><td class="text-right">88</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#12">Pressbooks\Modules\Export\ThinCC\WebLinks</a></td><td class="text-right">66</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#9">Pressbooks\Modules\Export\Prince\Filters</a></td><td class="text-right">45</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#14">Pressbooks\Modules\Export\Prince\Pdf</a></td><td class="text-right">34</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#14">Pressbooks\Modules\Export\WordPress\Wxr</a></td><td class="text-right">10</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-export.php.html#242"><abbr title="Pressbooks\Modules\Export\Export::getExportScriptUrl">getExportScriptUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#530"><abbr title="Pressbooks\Modules\Export\Export::loadTemplate">loadTemplate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#590"><abbr title="Pressbooks\Modules\Export\Export::formSubmit">formSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#611"><abbr title="Pressbooks\Modules\Export\Export::preExport">preExport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#637"><abbr title="Pressbooks\Modules\Export\Export::modules">modules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#704"><abbr title="Pressbooks\Modules\Export\Export::exportGenerator">exportGenerator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#777"><abbr title="Pressbooks\Modules\Export\Export::postExport">postExport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-export.php.html#906"><abbr title="Pressbooks\Modules\Export\Export::downloadExportFile">downloadExportFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-table.php.html#266"><abbr title="Pressbooks\Modules\Export\Table::getPins">getPins</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-table.php.html#285"><abbr title="Pressbooks\Modules\Export\Table::hasPin">hasPin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-table.php.html#476"><abbr title="Pressbooks\Modules\Export\Table::deleteFileById">deleteFileById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#616"><abbr title="Pressbooks\Modules\Export\Epub\Epub::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#633"><abbr title="Pressbooks\Modules\Export\Epub\Epub::validateGenerator">validateGenerator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#787"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2183"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueFont">fetchAndSaveUniqueFont</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2341"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fuzzyImageNameMatch">fuzzyImageNameMatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#145"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#298"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::logError">logError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#52"><abbr title="Pressbooks\Modules\Export\Odt\Odt::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#73"><abbr title="Pressbooks\Modules\Export\Odt\Odt::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#82"><abbr title="Pressbooks\Modules\Export\Odt\Odt::convert">convert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#233"><abbr title="Pressbooks\Modules\Export\Odt\Odt::queryXhtml">queryXhtml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#262"><abbr title="Pressbooks\Modules\Export\Odt\Odt::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#281"><abbr title="Pressbooks\Modules\Export\Odt\Odt::logError">logError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#295"><abbr title="Pressbooks\Modules\Export\Odt\Odt::isOdt">isOdt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#311"><abbr title="Pressbooks\Modules\Export\Odt\Odt::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#387"><abbr title="Pressbooks\Modules\Export\Odt\Odt::deleteTmpDir">deleteTmpDir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#157"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::getDetailedLog">getDetailedLog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#181"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#71"><abbr title="Pressbooks\Modules\Export\Prince\Filters::addToFormats">addToFormats</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#281"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::transform">transform</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#488"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::logError">logError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#523"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::endnoteShortcode">endnoteShortcode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#872"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::html5ToXhtml">html5ToXhtml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-table.php.html#445"><abbr title="Pressbooks\Modules\Export\Table::processBulkActions">processBulkActions</abbr></a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1603"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderPromo">renderPromo</abbr></a></td><td class="text-right">15%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#545"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::doEndnotes">doEndnotes</abbr></a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#877"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::dedicationAndEpigraph">dedicationAndEpigraph</abbr></a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="class-export.php.html#471"><abbr title="Pressbooks\Modules\Export\Export::doTocLicense">doTocLicense</abbr></a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#660"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::beforeTitle">beforeTitle</abbr></a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="class-export.php.html#502"><abbr title="Pressbooks\Modules\Export\Export::doSectionLevelLicense">doSectionLevelLicense</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="class-table.php.html#335"><abbr title="Pressbooks\Modules\Export\Table::getLatestExports">getLatestExports</abbr></a></td><td class="text-right">27%</td></tr>
+       <tr><td><a href="class-table.php.html#296"><abbr title="Pressbooks\Modules\Export\Table::truncateExports">truncateExports</abbr></a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1069"><abbr title="Pressbooks\Modules\Export\Epub\Epub::normalizeCssUrls">normalizeCssUrls</abbr></a></td><td class="text-right">39%</td></tr>
+       <tr><td><a href="class-export.php.html#449"><abbr title="Pressbooks\Modules\Export\Export::doCopyrightLicense">doCopyrightLicense</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2059"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1107"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderDedicationAndEpigraph">renderDedicationAndEpigraph</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1042"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderCopyright">renderCopyright</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1468"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderDedicationAndEpigraph">renderDedicationAndEpigraph</abbr></a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#935"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderBeforeTitle">renderBeforeTitle</abbr></a></td><td class="text-right">47%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#818"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::copyright">copyright</abbr></a></td><td class="text-right">48%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1954"><abbr title="Pressbooks\Modules\Export\Epub\Epub::positionOfToc">positionOfToc</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2244"><abbr title="Pressbooks\Modules\Export\Epub\Epub::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#158"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::validate">validate</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#52"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::validate">validate</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#186"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::convert">convert</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#224"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::validate">validate</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#65"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::convert">convert</abbr></a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1236"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderBeforeTitle">renderBeforeTitle</abbr></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="class-export.php.html#865"><abbr title="Pressbooks\Modules\Export\Export::isFormSubmission">isFormSubmission</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#474"><abbr title="Pressbooks\Modules\Export\Epub\Epub::convert">convert</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#93"><abbr title="Pressbooks\Modules\Export\Prince\Filters::addToModules">addToModules</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#106"><abbr title="Pressbooks\Modules\Export\Prince\Filters::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1370"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderCopyright">renderCopyright</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#765"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::removeAttributionLink">removeAttributionLink</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#447"><abbr title="Pressbooks\Modules\Export\Epub\Epub::isScripted">isScripted</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#92"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::validate">validate</abbr></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="class-export.php.html#412"><abbr title="Pressbooks\Modules\Export\Export::preProcessPostName">preProcessPostName</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#402"><abbr title="Pressbooks\Modules\Export\Epub\Epub::getProperties">getProperties</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2670"><abbr title="Pressbooks\Modules\Export\Epub\Epub::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1303"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::echoPromo">echoPromo</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1664"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#405"><abbr title="Pressbooks\Modules\Export\Odt\Odt::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#204"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::getPdfProfile">getPdfProfile</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#214"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::getPdfOutputIntent">getPdfOutputIntent</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#39"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::__construct">__construct</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1297"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::createPromo">createPromo</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1527"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#33"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::convert">convert</abbr></a></td><td class="text-right">67%</td></tr>
+       <tr><td><a href="class-export.php.html#208"><abbr title="Pressbooks\Modules\Export\Export::getExportScriptPath">getExportScriptPath</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#493"><abbr title="Pressbooks\Modules\Export\Epub\Epub::convertGenerator">convertGenerator</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2281"><abbr title="Pressbooks\Modules\Export\Epub\Epub::kneadHref">kneadHref</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#48"><abbr title="Pressbooks\Modules\Export\Prince\Filters::overridePrince">overridePrince</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="class-export.php.html#114"><abbr title="Pressbooks\Modules\Export\Export::getExportStylePath">getExportStylePath</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#77"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::transform">transform</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#368"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::formatXML">formatXML</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#182"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::transform">transform</abbr></a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2537"><abbr title="Pressbooks\Modules\Export\Epub\Epub::createOPF">createOPF</abbr></a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#974"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::tableOfContents">tableOfContents</abbr></a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#430"><abbr title="Pressbooks\Modules\Export\Epub\Epub::isMathML">isMathML</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#985"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderTitle">renderTitle</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1312"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderPartsAndChaptersGenerator">renderPartsAndChaptersGenerator</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#687"><abbr title="Pressbooks\Modules\Export\Epub\Epub::themeOptionsOverrides">themeOptionsOverrides</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#555"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::removeAttributionLink">removeAttributionLink</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#583"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::fixImages">fixImages</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1641"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::atLeastOneExport">atLeastOneExport</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#241"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::validateGenerator">validateGenerator</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#804"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::fixImages">fixImages</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1504"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::atLeastOneExport">atLeastOneExport</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="class-table.php.html#208"><abbr title="Pressbooks\Modules\Export\Table::inlineJs">inlineJs</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1316"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::partsAndChapters">partsAndChapters</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2499"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fixOrder">fixOrder</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="class-export.php.html#843"><abbr title="Pressbooks\Modules\Export\Export::locale">locale</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2025"><abbr title="Pressbooks\Modules\Export\Epub\Epub::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#761"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::title">title</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2380"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fuzzyHrefMatch">fuzzyHrefMatch</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1291"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderTitle">renderTitle</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1249"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderFrontMatterGenerator">renderFrontMatterGenerator</abbr></a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="class-export.php.html#426"><abbr title="Pressbooks\Modules\Export\Export::createTmpDir">createTmpDir</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#600"><abbr title="Pressbooks\Modules\Export\Epub\Epub::preProcessPostContent">preProcessPostContent</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#121"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::convert">convert</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#28"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::convert">convert</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#134"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::__construct">__construct</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="class-export.php.html#281"><abbr title="Pressbooks\Modules\Export\Export::logError">logError</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#894"><abbr title="Pressbooks\Modules\Export\Epub\Epub::zipEpub">zipEpub</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2637"><abbr title="Pressbooks\Modules\Export\Epub\Epub::createNCX">createNCX</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="class-table.php.html#248"><abbr title="Pressbooks\Modules\Export\Table::getFiles">getFiles</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#707"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#88"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::convert">convert</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#498"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#315"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::transformGenerator">transformGenerator</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="class-export.php.html#184"><abbr title="Pressbooks\Modules\Export\Export::truncateExportStylesheets">truncateExportStylesheets</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#203"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::convertGenerator">convertGenerator</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1455"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderBackMatterGenerator">renderBackMatterGenerator</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1188"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::frontMatter">frontMatter</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="odt/class-odt.php.html#82"><abbr title="Pressbooks\Modules\Export\Odt\Odt::convert">convert</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="class-export.php.html#777"><abbr title="Pressbooks\Modules\Export\Export::postExport">postExport</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="class-export.php.html#637"><abbr title="Pressbooks\Modules\Export\Export::modules">modules</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1069"><abbr title="Pressbooks\Modules\Export\Epub\Epub::normalizeCssUrls">normalizeCssUrls</abbr></a></td><td class="text-right">150</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#787"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#311"><abbr title="Pressbooks\Modules\Export\Odt\Odt::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#281"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::transform">transform</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1042"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderCopyright">renderCopyright</abbr></a></td><td class="text-right">69</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2059"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">59</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#974"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::tableOfContents">tableOfContents</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class-export.php.html#242"><abbr title="Pressbooks\Modules\Export\Export::getExportScriptUrl">getExportScriptUrl</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class-export.php.html#704"><abbr title="Pressbooks\Modules\Export\Export::exportGenerator">exportGenerator</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2183"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fetchAndSaveUniqueFont">fetchAndSaveUniqueFont</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1370"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderCopyright">renderCopyright</abbr></a></td><td class="text-right">44</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1316"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::partsAndChapters">partsAndChapters</abbr></a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#633"><abbr title="Pressbooks\Modules\Export\Epub\Epub::validateGenerator">validateGenerator</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#818"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::copyright">copyright</abbr></a></td><td class="text-right">41</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#877"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::dedicationAndEpigraph">dedicationAndEpigraph</abbr></a></td><td class="text-right">39</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#33"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::convert">convert</abbr></a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1312"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderPartsAndChaptersGenerator">renderPartsAndChaptersGenerator</abbr></a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2380"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fuzzyHrefMatch">fuzzyHrefMatch</abbr></a></td><td class="text-right">33</td></tr>
+       <tr><td><a href="class-table.php.html#445"><abbr title="Pressbooks\Modules\Export\Table::processBulkActions">processBulkActions</abbr></a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#157"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::getDetailedLog">getDetailedLog</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#660"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::beforeTitle">beforeTitle</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="class-table.php.html#296"><abbr title="Pressbooks\Modules\Export\Table::truncateExports">truncateExports</abbr></a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="class-export.php.html#471"><abbr title="Pressbooks\Modules\Export\Export::doTocLicense">doTocLicense</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="class-export.php.html#502"><abbr title="Pressbooks\Modules\Export\Export::doSectionLevelLicense">doSectionLevelLicense</abbr></a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="class-export.php.html#590"><abbr title="Pressbooks\Modules\Export\Export::formSubmit">formSubmit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="class-table.php.html#266"><abbr title="Pressbooks\Modules\Export\Table::getPins">getPins</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#315"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::transformGenerator">transformGenerator</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#182"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::transform">transform</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1188"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::frontMatter">frontMatter</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#761"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::title">title</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1107"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderDedicationAndEpigraph">renderDedicationAndEpigraph</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1468"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderDedicationAndEpigraph">renderDedicationAndEpigraph</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#985"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderTitle">renderTitle</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2281"><abbr title="Pressbooks\Modules\Export\Epub\Epub::kneadHref">kneadHref</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1291"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderTitle">renderTitle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#707"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#88"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::convert">convert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#545"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::doEndnotes">doEndnotes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-export.php.html#865"><abbr title="Pressbooks\Modules\Export\Export::isFormSubmission">isFormSubmission</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-export.php.html#530"><abbr title="Pressbooks\Modules\Export\Export::loadTemplate">loadTemplate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-table.php.html#476"><abbr title="Pressbooks\Modules\Export\Table::deleteFileById">deleteFileById</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#616"><abbr title="Pressbooks\Modules\Export\Epub\Epub::validate">validate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2341"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fuzzyImageNameMatch">fuzzyImageNameMatch</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#52"><abbr title="Pressbooks\Modules\Export\Odt\Odt::__construct">__construct</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#233"><abbr title="Pressbooks\Modules\Export\Odt\Odt::queryXhtml">queryXhtml</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#387"><abbr title="Pressbooks\Modules\Export\Odt\Odt::deleteTmpDir">deleteTmpDir</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2537"><abbr title="Pressbooks\Modules\Export\Epub\Epub::createOPF">createOPF</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#935"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderBeforeTitle">renderBeforeTitle</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#498"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="class-export.php.html#208"><abbr title="Pressbooks\Modules\Export\Export::getExportScriptPath">getExportScriptPath</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#493"><abbr title="Pressbooks\Modules\Export\Epub\Epub::convertGenerator">convertGenerator</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1954"><abbr title="Pressbooks\Modules\Export\Epub\Epub::positionOfToc">positionOfToc</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2244"><abbr title="Pressbooks\Modules\Export\Epub\Epub::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#447"><abbr title="Pressbooks\Modules\Export\Epub\Epub::isScripted">isScripted</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#92"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::validate">validate</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#65"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::convert">convert</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2499"><abbr title="Pressbooks\Modules\Export\Epub\Epub::fixOrder">fixOrder</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-export.php.html#281"><abbr title="Pressbooks\Modules\Export\Export::logError">logError</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2637"><abbr title="Pressbooks\Modules\Export\Epub\Epub::createNCX">createNCX</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#134"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::__construct">__construct</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1236"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderBeforeTitle">renderBeforeTitle</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#93"><abbr title="Pressbooks\Modules\Export\Prince\Filters::addToModules">addToModules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-table.php.html#335"><abbr title="Pressbooks\Modules\Export\Table::getLatestExports">getLatestExports</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1641"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::atLeastOneExport">atLeastOneExport</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1504"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::atLeastOneExport">atLeastOneExport</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-table.php.html#208"><abbr title="Pressbooks\Modules\Export\Table::inlineJs">inlineJs</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#765"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::removeAttributionLink">removeAttributionLink</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1249"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderFrontMatterGenerator">renderFrontMatterGenerator</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#894"><abbr title="Pressbooks\Modules\Export\Epub\Epub::zipEpub">zipEpub</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-export.php.html#611"><abbr title="Pressbooks\Modules\Export\Export::preExport">preExport</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#145"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#262"><abbr title="Pressbooks\Modules\Export\Odt\Odt::validate">validate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="prince/class-docraptor.php.html#181"><abbr title="Pressbooks\Modules\Export\Prince\Docraptor::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#523"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::endnoteShortcode">endnoteShortcode</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-export.php.html#114"><abbr title="Pressbooks\Modules\Export\Export::getExportStylePath">getExportStylePath</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#368"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::formatXML">formatXML</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#687"><abbr title="Pressbooks\Modules\Export\Epub\Epub::themeOptionsOverrides">themeOptionsOverrides</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#583"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::fixImages">fixImages</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#804"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::fixImages">fixImages</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2025"><abbr title="Pressbooks\Modules\Export\Epub\Epub::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-export.php.html#184"><abbr title="Pressbooks\Modules\Export\Export::truncateExportStylesheets">truncateExportStylesheets</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#106"><abbr title="Pressbooks\Modules\Export\Prince\Filters::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-export.php.html#449"><abbr title="Pressbooks\Modules\Export\Export::doCopyrightLicense">doCopyrightLicense</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#402"><abbr title="Pressbooks\Modules\Export\Epub\Epub::getProperties">getProperties</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#1603"><abbr title="Pressbooks\Modules\Export\Epub\Epub::renderPromo">renderPromo</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="prince/class-filters.php.html#48"><abbr title="Pressbooks\Modules\Export\Prince\Filters::overridePrince">overridePrince</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#77"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::transform">transform</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#186"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::convert">convert</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#224"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::validate">validate</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-export.php.html#843"><abbr title="Pressbooks\Modules\Export\Export::locale">locale</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#600"><abbr title="Pressbooks\Modules\Export\Epub\Epub::preProcessPostContent">preProcessPostContent</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-table.php.html#248"><abbr title="Pressbooks\Modules\Export\Table::getFiles">getFiles</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#474"><abbr title="Pressbooks\Modules\Export\Epub\Epub::convert">convert</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#430"><abbr title="Pressbooks\Modules\Export\Epub\Epub::isMathML">isMathML</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#555"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::removeAttributionLink">removeAttributionLink</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#241"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::validateGenerator">validateGenerator</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1455"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::renderBackMatterGenerator">renderBackMatterGenerator</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#158"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::validate">validate</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#52"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::validate">validate</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-export.php.html#412"><abbr title="Pressbooks\Modules\Export\Export::preProcessPostName">preProcessPostName</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="epub/class-epub.php.html#2670"><abbr title="Pressbooks\Modules\Export\Epub\Epub::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1303"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::echoPromo">echoPromo</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#1664"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="odt/class-odt.php.html#405"><abbr title="Pressbooks\Modules\Export\Odt\Odt::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#204"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::getPdfProfile">getPdfProfile</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="prince/class-pdf.php.html#214"><abbr title="Pressbooks\Modules\Export\Prince\Pdf::getPdfOutputIntent">getPdfOutputIntent</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="thincc/class-weblinks.php.html#39"><abbr title="Pressbooks\Modules\Export\ThinCC\WebLinks::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1297"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::createPromo">createPromo</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#1527"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::hasDependencies">hasDependencies</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-export.php.html#426"><abbr title="Pressbooks\Modules\Export\Export::createTmpDir">createTmpDir</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="htmlbook/class-htmlbook.php.html#121"><abbr title="Pressbooks\Modules\Export\HTMLBook\HTMLBook::convert">convert</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#28"><abbr title="Pressbooks\Modules\Export\WordPress\Wxr::convert">convert</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="xhtml/class-xhtml11.php.html#203"><abbr title="Pressbooks\Modules\Export\Xhtml\Xhtml11::convertGenerator">convertGenerator</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,1,0,0,0,1,2,1,4,2,2,3], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([34,0,2,6,2,7,8,21,21,24,18,104], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[42.69662921348314,130,"<a href=\"class-export.php.html#33\">Pressbooks\\Modules\\Export\\Export<\/a>"],[100,0,"<a href=\"class-exportgenerator.php.html#9\">Pressbooks\\Modules\\Export\\ExportGenerator<\/a>"],[72.97297297297297,74,"<a href=\"class-table.php.html#17\">Pressbooks\\Modules\\Export\\Table<\/a>"],[68.39430894308943,340,"<a href=\"epub\/class-epub.php.html#31\">Pressbooks\\Modules\\Export\\Epub\\Epub<\/a>"],[73.80607814761215,219,"<a href=\"htmlbook\/class-htmlbook.php.html#32\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook<\/a>"],[1.3245033112582782,47,"<a href=\"odt\/class-odt.php.html#11\">Pressbooks\\Modules\\Export\\Odt\\Odt<\/a>"],[58.620689655172406,29,"<a href=\"prince\/class-docraptor.php.html#11\">Pressbooks\\Modules\\Export\\Prince\\Docraptor<\/a>"],[100,6,"<a href=\"prince\/class-docraptorprint.php.html#9\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint<\/a>"],[58.06451612903226,19,"<a href=\"prince\/class-filters.php.html#9\">Pressbooks\\Modules\\Export\\Prince\\Filters<\/a>"],[86.90476190476191,32,"<a href=\"prince\/class-pdf.php.html#14\">Pressbooks\\Modules\\Export\\Prince\\Pdf<\/a>"],[100,4,"<a href=\"prince\/class-printpdf.php.html#9\">Pressbooks\\Modules\\Export\\Prince\\PrintPdf<\/a>"],[88.81578947368422,61,"<a href=\"thincc\/class-weblinks.php.html#12\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks<\/a>"],[95.16129032258065,19,"<a href=\"wordpress\/class-vanillawxr.php.html#12\">Pressbooks\\Modules\\Export\\WordPress\\VanillaWxr<\/a>"],[72.72727272727273,9,"<a href=\"wordpress\/class-wxr.php.html#14\">Pressbooks\\Modules\\Export\\WordPress\\Wxr<\/a>"],[75.44483985765125,210,"<a href=\"xhtml\/class-xhtml11.php.html#25\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11<\/a>"],[97.10144927536231,27,"<a href=\"class-exporthelpers.php.html#15\">Pressbooks\\Modules\\Export\\ExportHelpers<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,0,"<a href=\"class-export.php.html#88\">Pressbooks\\Modules\\Export\\Export::convert<\/a>"],[100,0,"<a href=\"class-export.php.html#95\">Pressbooks\\Modules\\Export\\Export::validate<\/a>"],[100,1,"<a href=\"class-export.php.html#102\">Pressbooks\\Modules\\Export\\Export::getOutputPath<\/a>"],[72.72727272727273,5,"<a href=\"class-export.php.html#114\">Pressbooks\\Modules\\Export\\Export::getExportStylePath<\/a>"],[100,4,"<a href=\"class-export.php.html#145\">Pressbooks\\Modules\\Export\\Export::getLatestExportStylePath<\/a>"],[100,4,"<a href=\"class-export.php.html#165\">Pressbooks\\Modules\\Export\\Export::getLatestExportStyleUrl<\/a>"],[88.88888888888889,5,"<a href=\"class-export.php.html#184\">Pressbooks\\Modules\\Export\\Export::truncateExportStylesheets<\/a>"],[69.23076923076923,8,"<a href=\"class-export.php.html#208\">Pressbooks\\Modules\\Export\\Export::getExportScriptPath<\/a>"],[0,7,"<a href=\"class-export.php.html#242\">Pressbooks\\Modules\\Export\\Export::getExportScriptUrl<\/a>"],[100,2,"<a href=\"class-export.php.html#264\">Pressbooks\\Modules\\Export\\Export::shouldParseSubsections<\/a>"],[86.66666666666667,7,"<a href=\"class-export.php.html#281\">Pressbooks\\Modules\\Export\\Export::logError<\/a>"],[100,1,"<a href=\"class-export.php.html#317\">Pressbooks\\Modules\\Export\\Export::createTmpFile<\/a>"],[100,3,"<a href=\"class-export.php.html#330\">Pressbooks\\Modules\\Export\\Export::timestampedFileName<\/a>"],[100,1,"<a href=\"class-export.php.html#356\">Pressbooks\\Modules\\Export\\Export::nonce<\/a>"],[100,3,"<a href=\"class-export.php.html#371\">Pressbooks\\Modules\\Export\\Export::verifyNonce<\/a>"],[100,1,"<a href=\"class-export.php.html#396\">Pressbooks\\Modules\\Export\\Export::fixAnnoyingCharacters<\/a>"],[66.66666666666666,2,"<a href=\"class-export.php.html#412\">Pressbooks\\Modules\\Export\\Export::preProcessPostName<\/a>"],[83.33333333333334,2,"<a href=\"class-export.php.html#426\">Pressbooks\\Modules\\Export\\Export::createTmpDir<\/a>"],[42.857142857142854,3,"<a href=\"class-export.php.html#449\">Pressbooks\\Modules\\Export\\Export::doCopyrightLicense<\/a>"],[23.076923076923077,6,"<a href=\"class-export.php.html#471\">Pressbooks\\Modules\\Export\\Export::doTocLicense<\/a>"],[25,6,"<a href=\"class-export.php.html#502\">Pressbooks\\Modules\\Export\\Export::doSectionLevelLicense<\/a>"],[0,3,"<a href=\"class-export.php.html#530\">Pressbooks\\Modules\\Export\\Export::loadTemplate<\/a>"],[100,1,"<a href=\"class-export.php.html#549\">Pressbooks\\Modules\\Export\\Export::mimeType<\/a>"],[100,3,"<a href=\"class-export.php.html#559\">Pressbooks\\Modules\\Export\\Export::getExportFolder<\/a>"],[0,4,"<a href=\"class-export.php.html#590\">Pressbooks\\Modules\\Export\\Export::formSubmit<\/a>"],[0,2,"<a href=\"class-export.php.html#611\">Pressbooks\\Modules\\Export\\Export::preExport<\/a>"],[0,12,"<a href=\"class-export.php.html#637\">Pressbooks\\Modules\\Export\\Export::modules<\/a>"],[0,7,"<a href=\"class-export.php.html#704\">Pressbooks\\Modules\\Export\\Export::exportGenerator<\/a>"],[0,14,"<a href=\"class-export.php.html#777\">Pressbooks\\Modules\\Export\\Export::postExport<\/a>"],[81.81818181818183,4,"<a href=\"class-export.php.html#843\">Pressbooks\\Modules\\Export\\Export::locale<\/a>"],[60,8,"<a href=\"class-export.php.html#865\">Pressbooks\\Modules\\Export\\Export::isFormSubmission<\/a>"],[0,1,"<a href=\"class-export.php.html#906\">Pressbooks\\Modules\\Export\\Export::downloadExportFile<\/a>"],[100,0,"<a href=\"class-exportgenerator.php.html#16\">Pressbooks\\Modules\\Export\\ExportGenerator::convertGenerator<\/a>"],[100,0,"<a href=\"class-exportgenerator.php.html#23\">Pressbooks\\Modules\\Export\\ExportGenerator::validateGenerator<\/a>"],[100,1,"<a href=\"class-table.php.html#22\">Pressbooks\\Modules\\Export\\Table::__construct<\/a>"],[100,1,"<a href=\"class-table.php.html#34\">Pressbooks\\Modules\\Export\\Table::single_row<\/a>"],[100,1,"<a href=\"class-table.php.html#55\">Pressbooks\\Modules\\Export\\Table::column_default<\/a>"],[100,1,"<a href=\"class-table.php.html#64\">Pressbooks\\Modules\\Export\\Table::column_cb<\/a>"],[100,1,"<a href=\"class-table.php.html#73\">Pressbooks\\Modules\\Export\\Table::column_file<\/a>"],[100,1,"<a href=\"class-table.php.html#110\">Pressbooks\\Modules\\Export\\Table::column_size<\/a>"],[100,1,"<a href=\"class-table.php.html#119\">Pressbooks\\Modules\\Export\\Table::column_pin<\/a>"],[100,1,"<a href=\"class-table.php.html#129\">Pressbooks\\Modules\\Export\\Table::get_columns<\/a>"],[100,1,"<a href=\"class-table.php.html#143\">Pressbooks\\Modules\\Export\\Table::get_sortable_columns<\/a>"],[100,1,"<a href=\"class-table.php.html#157\">Pressbooks\\Modules\\Export\\Table::get_bulk_actions<\/a>"],[100,4,"<a href=\"class-table.php.html#166\">Pressbooks\\Modules\\Export\\Table::prepare_items<\/a>"],[78.26086956521739,6,"<a href=\"class-table.php.html#208\">Pressbooks\\Modules\\Export\\Table::inlineJs<\/a>"],[87.5,4,"<a href=\"class-table.php.html#248\">Pressbooks\\Modules\\Export\\Table::getFiles<\/a>"],[0,4,"<a href=\"class-table.php.html#266\">Pressbooks\\Modules\\Export\\Table::getPins<\/a>"],[0,1,"<a href=\"class-table.php.html#285\">Pressbooks\\Modules\\Export\\Table::hasPin<\/a>"],[35,8,"<a href=\"class-table.php.html#296\">Pressbooks\\Modules\\Export\\Table::truncateExports<\/a>"],[27.27272727272727,3,"<a href=\"class-table.php.html#335\">Pressbooks\\Modules\\Export\\Table::getLatestExports<\/a>"],[100,22,"<a href=\"class-table.php.html#358\">Pressbooks\\Modules\\Export\\Table::getCssClass<\/a>"],[100,1,"<a href=\"class-table.php.html#423\">Pressbooks\\Modules\\Export\\Table::getIcon<\/a>"],[100,1,"<a href=\"class-table.php.html#437\">Pressbooks\\Modules\\Export\\Table::getFormat<\/a>"],[11.11111111111111,6,"<a href=\"class-table.php.html#445\">Pressbooks\\Modules\\Export\\Table::processBulkActions<\/a>"],[100,1,"<a href=\"class-table.php.html#468\">Pressbooks\\Modules\\Export\\Table::getTinyHash<\/a>"],[0,3,"<a href=\"class-table.php.html#476\">Pressbooks\\Modules\\Export\\Table::deleteFileById<\/a>"],[94.44444444444444,5,"<a href=\"epub\/class-epub.php.html#352\">Pressbooks\\Modules\\Export\\Epub\\Epub::__construct<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#390\">Pressbooks\\Modules\\Export\\Epub\\Epub::__destruct<\/a>"],[66.66666666666666,4,"<a href=\"epub\/class-epub.php.html#402\">Pressbooks\\Modules\\Export\\Epub\\Epub::getProperties<\/a>"],[75,3,"<a href=\"epub\/class-epub.php.html#430\">Pressbooks\\Modules\\Export\\Epub\\Epub::isMathML<\/a>"],[63.63636363636363,6,"<a href=\"epub\/class-epub.php.html#447\">Pressbooks\\Modules\\Export\\Epub\\Epub::isScripted<\/a>"],[60,3,"<a href=\"epub\/class-epub.php.html#474\">Pressbooks\\Modules\\Export\\Epub\\Epub::convert<\/a>"],[70.37037037037037,8,"<a href=\"epub\/class-epub.php.html#493\">Pressbooks\\Modules\\Export\\Epub\\Epub::convertGenerator<\/a>"],[100,12,"<a href=\"epub\/class-epub.php.html#545\">Pressbooks\\Modules\\Export\\Epub\\Epub::preProcessBookContents<\/a>"],[83.33333333333334,4,"<a href=\"epub\/class-epub.php.html#600\">Pressbooks\\Modules\\Export\\Epub\\Epub::preProcessPostContent<\/a>"],[0,3,"<a href=\"epub\/class-epub.php.html#616\">Pressbooks\\Modules\\Export\\Epub\\Epub::validate<\/a>"],[0,6,"<a href=\"epub\/class-epub.php.html#633\">Pressbooks\\Modules\\Export\\Epub\\Epub::validateGenerator<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#674\">Pressbooks\\Modules\\Export\\Epub\\Epub::mediaType<\/a>"],[77.77777777777779,5,"<a href=\"epub\/class-epub.php.html#687\">Pressbooks\\Modules\\Export\\Epub\\Epub::themeOptionsOverrides<\/a>"],[100,2,"<a href=\"epub\/class-epub.php.html#721\">Pressbooks\\Modules\\Export\\Epub\\Epub::tidy<\/a>"],[0,10,"<a href=\"epub\/class-epub.php.html#787\">Pressbooks\\Modules\\Export\\Epub\\Epub::fetchAndSaveUniqueMedia<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#866\">Pressbooks\\Modules\\Export\\Epub\\Epub::html5ToXhtml<\/a>"],[100,2,"<a href=\"epub\/class-epub.php.html#880\">Pressbooks\\Modules\\Export\\Epub\\Epub::deleteTmpDir<\/a>"],[86.66666666666667,6,"<a href=\"epub\/class-epub.php.html#894\">Pressbooks\\Modules\\Export\\Epub\\Epub::zipEpub<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#930\">Pressbooks\\Modules\\Export\\Epub\\Epub::createContainer<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#958\">Pressbooks\\Modules\\Export\\Epub\\Epub::createEPUBGenerator<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#1014\">Pressbooks\\Modules\\Export\\Epub\\Epub::createStylesheet<\/a>"],[92.3076923076923,5,"<a href=\"epub\/class-epub.php.html#1031\">Pressbooks\\Modules\\Export\\Epub\\Epub::scrapeKneadAndSaveCss<\/a>"],[39.6551724137931,24,"<a href=\"epub\/class-epub.php.html#1069\">Pressbooks\\Modules\\Export\\Epub\\Epub::normalizeCssUrls<\/a>"],[95.83333333333334,4,"<a href=\"epub\/class-epub.php.html#1182\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderCover<\/a>"],[56.52173913043478,5,"<a href=\"epub\/class-epub.php.html#1236\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderBeforeTitle<\/a>"],[82.35294117647058,12,"<a href=\"epub\/class-epub.php.html#1291\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderTitle<\/a>"],[60.78431372549019,20,"<a href=\"epub\/class-epub.php.html#1370\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderCopyright<\/a>"],[46.875,7,"<a href=\"epub\/class-epub.php.html#1468\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderDedicationAndEpigraph<\/a>"],[92.3076923076923,8,"<a href=\"epub\/class-epub.php.html#1541\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderFrontMatterGenerator<\/a>"],[15.384615384615385,2,"<a href=\"epub\/class-epub.php.html#1603\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderPromo<\/a>"],[90.47619047619048,30,"<a href=\"epub\/class-epub.php.html#1636\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderPartsAndChaptersGenerator<\/a>"],[95,3,"<a href=\"epub\/class-epub.php.html#1803\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderBackMatterGenerator<\/a>"],[94.87179487179486,12,"<a href=\"epub\/class-epub.php.html#1855\">Pressbooks\\Modules\\Export\\Epub\\Epub::renderToc<\/a>"],[50,5,"<a href=\"epub\/class-epub.php.html#1954\">Pressbooks\\Modules\\Export\\Epub\\Epub::positionOfToc<\/a>"],[100,4,"<a href=\"epub\/class-epub.php.html#1988\">Pressbooks\\Modules\\Export\\Epub\\Epub::kneadHtml<\/a>"],[81.81818181818183,5,"<a href=\"epub\/class-epub.php.html#2025\">Pressbooks\\Modules\\Export\\Epub\\Epub::scrapeAndKneadImages<\/a>"],[44.44444444444444,16,"<a href=\"epub\/class-epub.php.html#2059\">Pressbooks\\Modules\\Export\\Epub\\Epub::fetchAndSaveUniqueImage<\/a>"],[0,7,"<a href=\"epub\/class-epub.php.html#2183\">Pressbooks\\Modules\\Export\\Epub\\Epub::fetchAndSaveUniqueFont<\/a>"],[50,5,"<a href=\"epub\/class-epub.php.html#2244\">Pressbooks\\Modules\\Export\\Epub\\Epub::scrapeAndKneadMedia<\/a>"],[71.42857142857143,11,"<a href=\"epub\/class-epub.php.html#2281\">Pressbooks\\Modules\\Export\\Epub\\Epub::kneadHref<\/a>"],[0,3,"<a href=\"epub\/class-epub.php.html#2341\">Pressbooks\\Modules\\Export\\Epub\\Epub::fuzzyImageNameMatch<\/a>"],[82.25806451612904,29,"<a href=\"epub\/class-epub.php.html#2380\">Pressbooks\\Modules\\Export\\Epub\\Epub::fuzzyHrefMatch<\/a>"],[80,7,"<a href=\"epub\/class-epub.php.html#2499\">Pressbooks\\Modules\\Export\\Epub\\Epub::fixOrder<\/a>"],[74.07407407407408,10,"<a href=\"epub\/class-epub.php.html#2537\">Pressbooks\\Modules\\Export\\Epub\\Epub::createOPF<\/a>"],[95,7,"<a href=\"epub\/class-epub.php.html#2593\">Pressbooks\\Modules\\Export\\Epub\\Epub::buildManifestAssetsHtml<\/a>"],[86.66666666666667,7,"<a href=\"epub\/class-epub.php.html#2637\">Pressbooks\\Modules\\Export\\Epub\\Epub::createNCX<\/a>"],[66.66666666666666,2,"<a href=\"epub\/class-epub.php.html#2670\">Pressbooks\\Modules\\Export\\Epub\\Epub::hasDependencies<\/a>"],[100,2,"<a href=\"epub\/class-epub.php.html#2688\">Pressbooks\\Modules\\Export\\Epub\\Epub::createEpubFile<\/a>"],[100,2,"<a href=\"epub\/class-epub.php.html#2708\">Pressbooks\\Modules\\Export\\Epub\\Epub::generateFilename<\/a>"],[100,1,"<a href=\"epub\/class-epub.php.html#2718\">Pressbooks\\Modules\\Export\\Epub\\Epub::updateManifest<\/a>"],[100,4,"<a href=\"htmlbook\/class-htmlbook.php.html#84\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::__construct<\/a>"],[85.71428571428571,2,"<a href=\"htmlbook\/class-htmlbook.php.html#121\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::convert<\/a>"],[0,2,"<a href=\"htmlbook\/class-htmlbook.php.html#145\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::validate<\/a>"],[74,14,"<a href=\"htmlbook\/class-htmlbook.php.html#182\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::transform<\/a>"],[0,1,"<a href=\"htmlbook\/class-htmlbook.php.html#298\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::logError<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#315\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::footnoteShortcode<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#336\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::endnoteShortcode<\/a>"],[100,3,"<a href=\"htmlbook\/class-htmlbook.php.html#358\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::guessFrontMatterObj<\/a>"],[100,3,"<a href=\"htmlbook\/class-htmlbook.php.html#380\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::guessBackMatterObj<\/a>"],[96,13,"<a href=\"htmlbook\/class-htmlbook.php.html#407\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::preProcessBookContents<\/a>"],[100,2,"<a href=\"htmlbook\/class-htmlbook.php.html#466\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::preProcessPostContent<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#487\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::switchLaTexFormat<\/a>"],[88.46153846153845,11,"<a href=\"htmlbook\/class-htmlbook.php.html#498\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::fixInternalLinks<\/a>"],[77.77777777777779,3,"<a href=\"htmlbook\/class-htmlbook.php.html#555\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::removeAttributionLink<\/a>"],[77.77777777777779,5,"<a href=\"htmlbook\/class-htmlbook.php.html#583\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::fixImages<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#623\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::tidy<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#647\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::echoDocType<\/a>"],[23.684210526315788,7,"<a href=\"htmlbook\/class-htmlbook.php.html#660\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::beforeTitle<\/a>"],[100,1,"<a href=\"htmlbook\/class-htmlbook.php.html#747\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::halfTitle<\/a>"],[82.14285714285714,14,"<a href=\"htmlbook\/class-htmlbook.php.html#761\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::title<\/a>"],[48.275862068965516,14,"<a href=\"htmlbook\/class-htmlbook.php.html#818\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::copyright<\/a>"],[21.428571428571427,8,"<a href=\"htmlbook\/class-htmlbook.php.html#877\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::dedicationAndEpigraph<\/a>"],[74.79674796747967,36,"<a href=\"htmlbook\/class-htmlbook.php.html#974\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::tableOfContents<\/a>"],[89.0909090909091,17,"<a href=\"htmlbook\/class-htmlbook.php.html#1188\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::frontMatter<\/a>"],[66.66666666666666,2,"<a href=\"htmlbook\/class-htmlbook.php.html#1303\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::echoPromo<\/a>"],[78.70370370370371,33,"<a href=\"htmlbook\/class-htmlbook.php.html#1316\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::partsAndChapters<\/a>"],[91.66666666666666,11,"<a href=\"htmlbook\/class-htmlbook.php.html#1534\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::backMatter<\/a>"],[77.77777777777779,6,"<a href=\"htmlbook\/class-htmlbook.php.html#1641\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::atLeastOneExport<\/a>"],[66.66666666666666,2,"<a href=\"htmlbook\/class-htmlbook.php.html#1664\">Pressbooks\\Modules\\Export\\HTMLBook\\HTMLBook::hasDependencies<\/a>"],[0,3,"<a href=\"odt\/class-odt.php.html#52\">Pressbooks\\Modules\\Export\\Odt\\Odt::__construct<\/a>"],[0,1,"<a href=\"odt\/class-odt.php.html#73\">Pressbooks\\Modules\\Export\\Odt\\Odt::__destruct<\/a>"],[0,21,"<a href=\"odt\/class-odt.php.html#82\">Pressbooks\\Modules\\Export\\Odt\\Odt::convert<\/a>"],[0,3,"<a href=\"odt\/class-odt.php.html#233\">Pressbooks\\Modules\\Export\\Odt\\Odt::queryXhtml<\/a>"],[0,2,"<a href=\"odt\/class-odt.php.html#262\">Pressbooks\\Modules\\Export\\Odt\\Odt::validate<\/a>"],[0,1,"<a href=\"odt\/class-odt.php.html#281\">Pressbooks\\Modules\\Export\\Odt\\Odt::logError<\/a>"],[0,1,"<a href=\"odt\/class-odt.php.html#295\">Pressbooks\\Modules\\Export\\Odt\\Odt::isOdt<\/a>"],[0,10,"<a href=\"odt\/class-odt.php.html#311\">Pressbooks\\Modules\\Export\\Odt\\Odt::fetchAndSaveUniqueImage<\/a>"],[0,3,"<a href=\"odt\/class-odt.php.html#387\">Pressbooks\\Modules\\Export\\Odt\\Odt::deleteTmpDir<\/a>"],[66.66666666666666,2,"<a href=\"odt\/class-odt.php.html#405\">Pressbooks\\Modules\\Export\\Odt\\Odt::hasDependencies<\/a>"],[100,1,"<a href=\"prince\/class-docraptor.php.html#20\">Pressbooks\\Modules\\Export\\Prince\\Docraptor::__construct<\/a>"],[67.12328767123287,21,"<a href=\"prince\/class-docraptor.php.html#33\">Pressbooks\\Modules\\Export\\Prince\\Docraptor::convert<\/a>"],[0,5,"<a href=\"prince\/class-docraptor.php.html#157\">Pressbooks\\Modules\\Export\\Prince\\Docraptor::getDetailedLog<\/a>"],[0,2,"<a href=\"prince\/class-docraptor.php.html#181\">Pressbooks\\Modules\\Export\\Prince\\Docraptor::hasDependencies<\/a>"],[100,1,"<a href=\"prince\/class-docraptorprint.php.html#18\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint::__construct<\/a>"],[100,1,"<a href=\"prince\/class-docraptorprint.php.html#29\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint::generateFileName<\/a>"],[100,1,"<a href=\"prince\/class-docraptorprint.php.html#38\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint::getPdfProfile<\/a>"],[100,1,"<a href=\"prince\/class-docraptorprint.php.html#47\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint::getPdfOutputIntent<\/a>"],[100,2,"<a href=\"prince\/class-docraptorprint.php.html#54\">Pressbooks\\Modules\\Export\\Prince\\DocraptorPrint::themeOptionsOverrides<\/a>"],[100,2,"<a href=\"prince\/class-filters.php.html#19\">Pressbooks\\Modules\\Export\\Prince\\Filters::init<\/a>"],[100,2,"<a href=\"prince\/class-filters.php.html#30\">Pressbooks\\Modules\\Export\\Prince\\Filters::hooks<\/a>"],[100,1,"<a href=\"prince\/class-filters.php.html#40\">Pressbooks\\Modules\\Export\\Prince\\Filters::__construct<\/a>"],[71.42857142857143,4,"<a href=\"prince\/class-filters.php.html#48\">Pressbooks\\Modules\\Export\\Prince\\Filters::overridePrince<\/a>"],[0,1,"<a href=\"prince\/class-filters.php.html#71\">Pressbooks\\Modules\\Export\\Prince\\Filters::addToFormats<\/a>"],[60,5,"<a href=\"prince\/class-filters.php.html#93\">Pressbooks\\Modules\\Export\\Prince\\Filters::addToModules<\/a>"],[60,4,"<a href=\"prince\/class-filters.php.html#106\">Pressbooks\\Modules\\Export\\Prince\\Filters::hasDependencies<\/a>"],[90,2,"<a href=\"prince\/class-pdf.php.html#64\">Pressbooks\\Modules\\Export\\Prince\\Pdf::__construct<\/a>"],[88.23529411764706,12,"<a href=\"prince\/class-pdf.php.html#88\">Pressbooks\\Modules\\Export\\Prince\\Pdf::convert<\/a>"],[50,2,"<a href=\"prince\/class-pdf.php.html#158\">Pressbooks\\Modules\\Export\\Prince\\Pdf::validate<\/a>"],[100,1,"<a href=\"prince\/class-pdf.php.html#173\">Pressbooks\\Modules\\Export\\Prince\\Pdf::logError<\/a>"],[100,1,"<a href=\"prince\/class-pdf.php.html#183\">Pressbooks\\Modules\\Export\\Prince\\Pdf::generateFileName<\/a>"],[100,1,"<a href=\"prince\/class-pdf.php.html#194\">Pressbooks\\Modules\\Export\\Prince\\Pdf::isPdf<\/a>"],[66.66666666666666,2,"<a href=\"prince\/class-pdf.php.html#204\">Pressbooks\\Modules\\Export\\Prince\\Pdf::getPdfProfile<\/a>"],[66.66666666666666,2,"<a href=\"prince\/class-pdf.php.html#214\">Pressbooks\\Modules\\Export\\Prince\\Pdf::getPdfOutputIntent<\/a>"],[90,4,"<a href=\"prince\/class-pdf.php.html#226\">Pressbooks\\Modules\\Export\\Prince\\Pdf::kneadCss<\/a>"],[100,1,"<a href=\"prince\/class-pdf.php.html#255\">Pressbooks\\Modules\\Export\\Prince\\Pdf::urlPath<\/a>"],[90,4,"<a href=\"prince\/class-pdf.php.html#267\">Pressbooks\\Modules\\Export\\Prince\\Pdf::themeOptionsOverrides<\/a>"],[100,1,"<a href=\"prince\/class-printpdf.php.html#14\">Pressbooks\\Modules\\Export\\Prince\\PrintPdf::__construct<\/a>"],[100,1,"<a href=\"prince\/class-printpdf.php.html#25\">Pressbooks\\Modules\\Export\\Prince\\PrintPdf::generateFileName<\/a>"],[100,1,"<a href=\"prince\/class-printpdf.php.html#34\">Pressbooks\\Modules\\Export\\Prince\\PrintPdf::getPdfProfile<\/a>"],[100,1,"<a href=\"prince\/class-printpdf.php.html#43\">Pressbooks\\Modules\\Export\\Prince\\PrintPdf::getPdfOutputIntent<\/a>"],[66.66666666666666,2,"<a href=\"thincc\/class-weblinks.php.html#39\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::__construct<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#49\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::__destruct<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#56\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::getTmpDir<\/a>"],[53.84615384615385,5,"<a href=\"thincc\/class-weblinks.php.html#65\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::convert<\/a>"],[64.28571428571429,6,"<a href=\"thincc\/class-weblinks.php.html#92\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::validate<\/a>"],[100,2,"<a href=\"thincc\/class-weblinks.php.html#119\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::deleteTmpDir<\/a>"],[100,2,"<a href=\"thincc\/class-weblinks.php.html#129\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::createManifest<\/a>"],[100,13,"<a href=\"thincc\/class-weblinks.php.html#150\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::identifiers<\/a>"],[100,2,"<a href=\"thincc\/class-weblinks.php.html#215\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::resources<\/a>"],[100,2,"<a href=\"thincc\/class-weblinks.php.html#230\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::createResources<\/a>"],[90,4,"<a href=\"thincc\/class-weblinks.php.html#250\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::zip<\/a>"],[100,10,"<a href=\"thincc\/class-weblinks.php.html#269\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::getExports<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#307\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::getData<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#325\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::render<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#338\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::getView<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#348\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::getResourceType<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#358\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::identifier<\/a>"],[73.33333333333333,5,"<a href=\"thincc\/class-weblinks.php.html#368\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::formatXML<\/a>"],[100,1,"<a href=\"thincc\/class-weblinks.php.html#399\">Pressbooks\\Modules\\Export\\ThinCC\\WebLinks::showInWeb<\/a>"],[94.64285714285714,16,"<a href=\"wordpress\/class-vanillawxr.php.html#14\">Pressbooks\\Modules\\Export\\WordPress\\VanillaWxr::convert<\/a>"],[100,1,"<a href=\"wordpress\/class-vanillawxr.php.html#123\">Pressbooks\\Modules\\Export\\WordPress\\VanillaWxr::deleteNode<\/a>"],[100,2,"<a href=\"wordpress\/class-vanillawxr.php.html#134\">Pressbooks\\Modules\\Export\\WordPress\\VanillaWxr::deleteChildren<\/a>"],[100,1,"<a href=\"wordpress\/class-wxr.php.html#19\">Pressbooks\\Modules\\Export\\WordPress\\Wxr::__construct<\/a>"],[85.71428571428571,2,"<a href=\"wordpress\/class-wxr.php.html#28\">Pressbooks\\Modules\\Export\\WordPress\\Wxr::convert<\/a>"],[50,2,"<a href=\"wordpress\/class-wxr.php.html#52\">Pressbooks\\Modules\\Export\\WordPress\\Wxr::validate<\/a>"],[72.72727272727273,4,"<a href=\"wordpress\/class-wxr.php.html#77\">Pressbooks\\Modules\\Export\\WordPress\\Wxr::transform<\/a>"],[86.36363636363636,7,"<a href=\"xhtml\/class-xhtml11.php.html#134\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::__construct<\/a>"],[50,3,"<a href=\"xhtml\/class-xhtml11.php.html#186\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::convert<\/a>"],[88.88888888888889,2,"<a href=\"xhtml\/class-xhtml11.php.html#203\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::convertGenerator<\/a>"],[50,3,"<a href=\"xhtml\/class-xhtml11.php.html#224\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::validate<\/a>"],[77.77777777777779,3,"<a href=\"xhtml\/class-xhtml11.php.html#241\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::validateGenerator<\/a>"],[0,8,"<a href=\"xhtml\/class-xhtml11.php.html#281\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::transform<\/a>"],[88.60759493670885,18,"<a href=\"xhtml\/class-xhtml11.php.html#315\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::transformGenerator<\/a>"],[0,1,"<a href=\"xhtml\/class-xhtml11.php.html#488\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::logError<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#505\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::footnoteShortcode<\/a>"],[0,2,"<a href=\"xhtml\/class-xhtml11.php.html#523\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::endnoteShortcode<\/a>"],[20,4,"<a href=\"xhtml\/class-xhtml11.php.html#545\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::doEndnotes<\/a>"],[100,4,"<a href=\"xhtml\/class-xhtml11.php.html#572\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::doFootnotes<\/a>"],[96,13,"<a href=\"xhtml\/class-xhtml11.php.html#598\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::preProcessBookContents<\/a>"],[100,2,"<a href=\"xhtml\/class-xhtml11.php.html#658\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::preProcessPostContent<\/a>"],[100,2,"<a href=\"xhtml\/class-xhtml11.php.html#672\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::fixImageAttributes<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#695\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::switchLaTexFormat<\/a>"],[88,12,"<a href=\"xhtml\/class-xhtml11.php.html#707\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::fixInternalLinks<\/a>"],[62.5,5,"<a href=\"xhtml\/class-xhtml11.php.html#765\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::removeAttributionLink<\/a>"],[77.77777777777779,5,"<a href=\"xhtml\/class-xhtml11.php.html#804\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::fixImages<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#844\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::tidy<\/a>"],[0,1,"<a href=\"xhtml\/class-xhtml11.php.html#872\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::html5ToXhtml<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#889\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::echoDocType<\/a>"],[100,5,"<a href=\"xhtml\/class-xhtml11.php.html#900\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::echoMetaData<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#915\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::echoMetaDataItem<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#927\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderCover<\/a>"],[47.368421052631575,6,"<a href=\"xhtml\/class-xhtml11.php.html#935\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderBeforeTitle<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#975\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderHalfTitle<\/a>"],[76,12,"<a href=\"xhtml\/class-xhtml11.php.html#985\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderTitle<\/a>"],[45.94594594594595,18,"<a href=\"xhtml\/class-xhtml11.php.html#1042\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderCopyright<\/a>"],[45.45454545454545,7,"<a href=\"xhtml\/class-xhtml11.php.html#1107\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderDedicationAndEpigraph<\/a>"],[92.10526315789474,13,"<a href=\"xhtml\/class-xhtml11.php.html#1153\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderToc<\/a>"],[82.35294117647058,6,"<a href=\"xhtml\/class-xhtml11.php.html#1249\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderFrontMatterGenerator<\/a>"],[66.66666666666666,2,"<a href=\"xhtml\/class-xhtml11.php.html#1297\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::createPromo<\/a>"],[77.63157894736842,27,"<a href=\"xhtml\/class-xhtml11.php.html#1312\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderPartsAndChaptersGenerator<\/a>"],[88.88888888888889,3,"<a href=\"xhtml\/class-xhtml11.php.html#1455\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderBackMatterGenerator<\/a>"],[100,1,"<a href=\"xhtml\/class-xhtml11.php.html#1487\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::renderPart<\/a>"],[77.77777777777779,6,"<a href=\"xhtml\/class-xhtml11.php.html#1504\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::atLeastOneExport<\/a>"],[66.66666666666666,2,"<a href=\"xhtml\/class-xhtml11.php.html#1527\">Pressbooks\\Modules\\Export\\Xhtml\\Xhtml11::hasDependencies<\/a>"],[100,1,"<a href=\"class-exporthelpers.php.html#22\">Pressbooks\\Modules\\Export\\ExportHelpers::getPostSubClass<\/a>"],[94.87179487179486,15,"<a href=\"class-exporthelpers.php.html#38\">Pressbooks\\Modules\\Export\\ExportHelpers::mapBookDataAndContent<\/a>"],[100,2,"<a href=\"class-exporthelpers.php.html#104\">Pressbooks\\Modules\\Export\\ExportHelpers::countPartsAndChapters<\/a>"],[100,1,"<a href=\"class-exporthelpers.php.html#122\">Pressbooks\\Modules\\Export\\ExportHelpers::getPostInformation<\/a>"],[100,1,"<a href=\"class-exporthelpers.php.html#139\">Pressbooks\\Modules\\Export\\ExportHelpers::getExtendedPostInformation<\/a>"],[100,7,"<a href=\"class-exporthelpers.php.html#154\">Pressbooks\\Modules\\Export\\ExportHelpers::renderTocItem<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="index.html">admin</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-catalog-list-table.php.html#19">Pressbooks\Admin\Catalog_List_Table</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#19">Pressbooks\Admin\Network_Managers_List_Table</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#12">Pressbooks\Admin\Network\NetworkSettings</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#20">Pressbooks\Admin\Network\SharingAndPrivacyOptions</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="class-sitemap.php.html#13">Pressbooks\Admin\SiteMap</a></td><td class="text-right">84%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-catalog-list-table.php.html#19">Pressbooks\Admin\Catalog_List_Table</a></td><td class="text-right">4087</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#20">Pressbooks\Admin\Network\SharingAndPrivacyOptions</a></td><td class="text-right">69</td></tr>
+       <tr><td><a href="class-sitemap.php.html#13">Pressbooks\Admin\SiteMap</a></td><td class="text-right">37</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#19">Pressbooks\Admin\Network_Managers_List_Table</a></td><td class="text-right">32</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#12">Pressbooks\Admin\Network\NetworkSettings</a></td><td class="text-right">13</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-catalog-list-table.php.html#51"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_default">column_default</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#65"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_title">column_title</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#92"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_status">column_status</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#128"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_cover">column_cover</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#146"><abbr title="Pressbooks\Admin\Catalog_List_Table::_column_title">_column_title</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#161"><abbr title="Pressbooks\Admin\Catalog_List_Table::_column_tag_1">_column_tag_1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#176"><abbr title="Pressbooks\Admin\Catalog_List_Table::_column_tag_2">_column_tag_2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#189"><abbr title="Pressbooks\Admin\Catalog_List_Table::hasRowActionsFix">hasRowActionsFix</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#209"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_cb">column_cb</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#251"><abbr title="Pressbooks\Admin\Catalog_List_Table::get_sortable_columns">get_sortable_columns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#267"><abbr title="Pressbooks\Admin\Catalog_List_Table::get_bulk_actions">get_bulk_actions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#283"><abbr title="Pressbooks\Admin\Catalog_List_Table::prepare_items">prepare_items</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#339"><abbr title="Pressbooks\Admin\Catalog_List_Table::print_column_headers">print_column_headers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#361"><abbr title="Pressbooks\Admin\Catalog_List_Table::_js_vars">_js_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#366"><abbr title="Pressbooks\Admin\Catalog_List_Table::ajax_response">ajax_response</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#381"><abbr title="Pressbooks\Admin\Catalog_List_Table::renderTagColumn">renderTagColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#414"><abbr title="Pressbooks\Admin\Catalog_List_Table::getHiddenColumns">getHiddenColumns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#426"><abbr title="Pressbooks\Admin\Catalog_List_Table::getItemsData">getItemsData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#447"><abbr title="Pressbooks\Admin\Catalog_List_Table::searchFilter">searchFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#471"><abbr title="Pressbooks\Admin\Catalog_List_Table::atLeastOneKeyword">atLeastOneKeyword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#494"><abbr title="Pressbooks\Admin\Catalog_List_Table::addMenu">addMenu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#588"><abbr title="Pressbooks\Admin\Catalog_List_Table::addSearchParamsToUrl">addSearchParamsToUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#614"><abbr title="Pressbooks\Admin\Catalog_List_Table::viewCatalogUrl">viewCatalogUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#45"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::column_display_name">column_display_name</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#58"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::column_user_email">column_user_email</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#71"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::column_user_login">column_user_login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#133"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::single_row">single_row</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-sitemap.php.html#55"><abbr title="Pressbooks\Admin\SiteMap::addMenu">addMenu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#40"><abbr title="Pressbooks\Admin\Network\NetworkSettings::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#207"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::updateBooksLastUpdatedDate">updateBooksLastUpdatedDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#224"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::networkExcludeOption">networkExcludeOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#233"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::excludeNonCatalogBooksFromDirectory">excludeNonCatalogBooksFromDirectory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#315"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::upgrade">upgrade</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#165"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::render">render</abbr></a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="users/class-userbulk.php.html#50"><abbr title="Pressbooks\Admin\Users\UserBulk::hooks">hooks</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="delete/class-book.php.html#27"><abbr title="Pressbooks\Admin\Delete\Book::hooks">hooks</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="class-sitemap.php.html#179"><abbr title="Pressbooks\Admin\SiteMap::printMenuTree">printMenuTree</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#61"><abbr title="Pressbooks\Admin\Network\NetworkSettings::renderCustomOptions">renderCustomOptions</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="class-sitemap.php.html#89"><abbr title="Pressbooks\Admin\SiteMap::adminBar">adminBar</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#102"><abbr title="Pressbooks\Admin\Network\NetworkSettings::saveNetworkSettings">saveNetworkSettings</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-catalog-list-table.php.html#494"><abbr title="Pressbooks\Admin\Catalog_List_Table::addMenu">addMenu</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#339"><abbr title="Pressbooks\Admin\Catalog_List_Table::print_column_headers">print_column_headers</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#447"><abbr title="Pressbooks\Admin\Catalog_List_Table::searchFilter">searchFilter</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#471"><abbr title="Pressbooks\Admin\Catalog_List_Table::atLeastOneKeyword">atLeastOneKeyword</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#588"><abbr title="Pressbooks\Admin\Catalog_List_Table::addSearchParamsToUrl">addSearchParamsToUrl</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#283"><abbr title="Pressbooks\Admin\Catalog_List_Table::prepare_items">prepare_items</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#426"><abbr title="Pressbooks\Admin\Catalog_List_Table::getItemsData">getItemsData</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#614"><abbr title="Pressbooks\Admin\Catalog_List_Table::viewCatalogUrl">viewCatalogUrl</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#315"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::upgrade">upgrade</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#165"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::render">render</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#65"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_title">column_title</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#71"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::column_user_login">column_user_login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#207"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::updateBooksLastUpdatedDate">updateBooksLastUpdatedDate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-sitemap.php.html#179"><abbr title="Pressbooks\Admin\SiteMap::printMenuTree">printMenuTree</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#51"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_default">column_default</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#92"><abbr title="Pressbooks\Admin\Catalog_List_Table::column_status">column_status</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#189"><abbr title="Pressbooks\Admin\Catalog_List_Table::hasRowActionsFix">hasRowActionsFix</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-catalog-list-table.php.html#381"><abbr title="Pressbooks\Admin\Catalog_List_Table::renderTagColumn">renderTagColumn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-network-managers-list-table.php.html#133"><abbr title="Pressbooks\Admin\Network_Managers_List_Table::single_row">single_row</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#40"><abbr title="Pressbooks\Admin\Network\NetworkSettings::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="network/class-sharingandprivacyoptions.php.html#233"><abbr title="Pressbooks\Admin\Network\SharingAndPrivacyOptions::excludeNonCatalogBooksFromDirectory">excludeNonCatalogBooksFromDirectory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-sitemap.php.html#89"><abbr title="Pressbooks\Admin\SiteMap::adminBar">adminBar</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#102"><abbr title="Pressbooks\Admin\Network\NetworkSettings::saveNetworkSettings">saveNetworkSettings</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="users/class-userbulk.php.html#50"><abbr title="Pressbooks\Admin\Users\UserBulk::hooks">hooks</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="delete/class-book.php.html#27"><abbr title="Pressbooks\Admin\Delete\Book::hooks">hooks</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="network/class-networksettings.php.html#61"><abbr title="Pressbooks\Admin\Network\NetworkSettings::renderCustomOptions">renderCustomOptions</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,1,0,0,0,0,0,1,0,3,2,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([33,0,0,0,0,1,1,0,2,3,1,75], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[7.291666666666667,71,"<a href=\"class-catalog-list-table.php.html#19\">Pressbooks\\Admin\\Catalog_List_Table<\/a>"],[100,19,"<a href=\"class-exportoptions.php.html#11\">Pressbooks\\Admin\\ExportOptions<\/a>"],[60,16,"<a href=\"class-network-managers-list-table.php.html#19\">Pressbooks\\Admin\\Network_Managers_List_Table<\/a>"],[100,26,"<a href=\"class-publishoptions.php.html#11\">Pressbooks\\Admin\\PublishOptions<\/a>"],[84.4155844155844,33,"<a href=\"class-sitemap.php.html#13\">Pressbooks\\Admin\\SiteMap<\/a>"],[92.85714285714286,7,"<a href=\"delete\/class-book.php.html#9\">Pressbooks\\Admin\\Delete\\Book<\/a>"],[80,12,"<a href=\"network\/class-networksettings.php.html#12\">Pressbooks\\Admin\\Network\\NetworkSettings<\/a>"],[81.5068493150685,52,"<a href=\"network\/class-sharingandprivacyoptions.php.html#20\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions<\/a>"],[97.70114942528735,37,"<a href=\"users\/class-userbulk.php.html#12\">Pressbooks\\Admin\\Users\\UserBulk<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"class-catalog-list-table.php.html#28\">Pressbooks\\Admin\\Catalog_List_Table::__construct<\/a>"],[0,2,"<a href=\"class-catalog-list-table.php.html#51\">Pressbooks\\Admin\\Catalog_List_Table::column_default<\/a>"],[0,3,"<a href=\"class-catalog-list-table.php.html#65\">Pressbooks\\Admin\\Catalog_List_Table::column_title<\/a>"],[0,2,"<a href=\"class-catalog-list-table.php.html#92\">Pressbooks\\Admin\\Catalog_List_Table::column_status<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#128\">Pressbooks\\Admin\\Catalog_List_Table::column_cover<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#146\">Pressbooks\\Admin\\Catalog_List_Table::_column_title<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#161\">Pressbooks\\Admin\\Catalog_List_Table::_column_tag_1<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#176\">Pressbooks\\Admin\\Catalog_List_Table::_column_tag_2<\/a>"],[0,2,"<a href=\"class-catalog-list-table.php.html#189\">Pressbooks\\Admin\\Catalog_List_Table::hasRowActionsFix<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#209\">Pressbooks\\Admin\\Catalog_List_Table::column_cb<\/a>"],[100,3,"<a href=\"class-catalog-list-table.php.html#222\">Pressbooks\\Admin\\Catalog_List_Table::get_columns<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#251\">Pressbooks\\Admin\\Catalog_List_Table::get_sortable_columns<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#267\">Pressbooks\\Admin\\Catalog_List_Table::get_bulk_actions<\/a>"],[0,4,"<a href=\"class-catalog-list-table.php.html#283\">Pressbooks\\Admin\\Catalog_List_Table::prepare_items<\/a>"],[0,9,"<a href=\"class-catalog-list-table.php.html#339\">Pressbooks\\Admin\\Catalog_List_Table::print_column_headers<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#361\">Pressbooks\\Admin\\Catalog_List_Table::_js_vars<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#366\">Pressbooks\\Admin\\Catalog_List_Table::ajax_response<\/a>"],[0,2,"<a href=\"class-catalog-list-table.php.html#381\">Pressbooks\\Admin\\Catalog_List_Table::renderTagColumn<\/a>"],[0,1,"<a href=\"class-catalog-list-table.php.html#414\">Pressbooks\\Admin\\Catalog_List_Table::getHiddenColumns<\/a>"],[0,4,"<a href=\"class-catalog-list-table.php.html#426\">Pressbooks\\Admin\\Catalog_List_Table::getItemsData<\/a>"],[0,5,"<a href=\"class-catalog-list-table.php.html#447\">Pressbooks\\Admin\\Catalog_List_Table::searchFilter<\/a>"],[0,5,"<a href=\"class-catalog-list-table.php.html#471\">Pressbooks\\Admin\\Catalog_List_Table::atLeastOneKeyword<\/a>"],[0,10,"<a href=\"class-catalog-list-table.php.html#494\">Pressbooks\\Admin\\Catalog_List_Table::addMenu<\/a>"],[0,5,"<a href=\"class-catalog-list-table.php.html#588\">Pressbooks\\Admin\\Catalog_List_Table::addSearchParamsToUrl<\/a>"],[0,4,"<a href=\"class-catalog-list-table.php.html#614\">Pressbooks\\Admin\\Catalog_List_Table::viewCatalogUrl<\/a>"],[100,3,"<a href=\"class-exportoptions.php.html#39\">Pressbooks\\Admin\\ExportOptions::__construct<\/a>"],[100,2,"<a href=\"class-exportoptions.php.html#54\">Pressbooks\\Admin\\ExportOptions::init<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#101\">Pressbooks\\Admin\\ExportOptions::display<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#105\">Pressbooks\\Admin\\ExportOptions::render<\/a>"],[100,2,"<a href=\"class-exportoptions.php.html#120\">Pressbooks\\Admin\\ExportOptions::upgrade<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#126\">Pressbooks\\Admin\\ExportOptions::doInitialUpgrade<\/a>"],[100,2,"<a href=\"class-exportoptions.php.html#143\">Pressbooks\\Admin\\ExportOptions::renderEmailValidationLogsField<\/a>"],[100,2,"<a href=\"class-exportoptions.php.html#160\">Pressbooks\\Admin\\ExportOptions::renderThemeLockField<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#178\">Pressbooks\\Admin\\ExportOptions::getSlug<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#187\">Pressbooks\\Admin\\ExportOptions::getTitle<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#196\">Pressbooks\\Admin\\ExportOptions::getDefaults<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#208\">Pressbooks\\Admin\\ExportOptions::getBooleanOptions<\/a>"],[100,1,"<a href=\"class-exportoptions.php.html#222\">Pressbooks\\Admin\\ExportOptions::filterDefaults<\/a>"],[100,1,"<a href=\"class-network-managers-list-table.php.html#24\">Pressbooks\\Admin\\Network_Managers_List_Table::__construct<\/a>"],[0,1,"<a href=\"class-network-managers-list-table.php.html#45\">Pressbooks\\Admin\\Network_Managers_List_Table::column_display_name<\/a>"],[0,1,"<a href=\"class-network-managers-list-table.php.html#58\">Pressbooks\\Admin\\Network_Managers_List_Table::column_user_email<\/a>"],[0,3,"<a href=\"class-network-managers-list-table.php.html#71\">Pressbooks\\Admin\\Network_Managers_List_Table::column_user_login<\/a>"],[100,1,"<a href=\"class-network-managers-list-table.php.html#105\">Pressbooks\\Admin\\Network_Managers_List_Table::get_columns<\/a>"],[100,1,"<a href=\"class-network-managers-list-table.php.html#119\">Pressbooks\\Admin\\Network_Managers_List_Table::get_sortable_columns<\/a>"],[0,2,"<a href=\"class-network-managers-list-table.php.html#133\">Pressbooks\\Admin\\Network_Managers_List_Table::single_row<\/a>"],[100,6,"<a href=\"class-network-managers-list-table.php.html#154\">Pressbooks\\Admin\\Network_Managers_List_Table::prepare_items<\/a>"],[100,3,"<a href=\"class-publishoptions.php.html#39\">Pressbooks\\Admin\\PublishOptions::__construct<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#54\">Pressbooks\\Admin\\PublishOptions::init<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#130\">Pressbooks\\Admin\\PublishOptions::display<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#158\">Pressbooks\\Admin\\PublishOptions::render<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#173\">Pressbooks\\Admin\\PublishOptions::upgrade<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#179\">Pressbooks\\Admin\\PublishOptions::doInitialUpgrade<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#185\">Pressbooks\\Admin\\PublishOptions::renderAmazonField<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#201\">Pressbooks\\Admin\\PublishOptions::renderOReillyField<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#217\">Pressbooks\\Admin\\PublishOptions::renderBarnesAndNobleField<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#233\">Pressbooks\\Admin\\PublishOptions::renderKoboField<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#249\">Pressbooks\\Admin\\PublishOptions::renderAppleBooksField<\/a>"],[100,2,"<a href=\"class-publishoptions.php.html#265\">Pressbooks\\Admin\\PublishOptions::renderOtherServiceField<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#283\">Pressbooks\\Admin\\PublishOptions::getSlug<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#292\">Pressbooks\\Admin\\PublishOptions::getTitle<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#301\">Pressbooks\\Admin\\PublishOptions::getDefaults<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#317\">Pressbooks\\Admin\\PublishOptions::getUrlOptions<\/a>"],[100,1,"<a href=\"class-publishoptions.php.html#335\">Pressbooks\\Admin\\PublishOptions::filterDefaults<\/a>"],[100,2,"<a href=\"class-sitemap.php.html#30\">Pressbooks\\Admin\\SiteMap::init<\/a>"],[100,1,"<a href=\"class-sitemap.php.html#41\">Pressbooks\\Admin\\SiteMap::hooks<\/a>"],[100,1,"<a href=\"class-sitemap.php.html#49\">Pressbooks\\Admin\\SiteMap::__construct<\/a>"],[0,1,"<a href=\"class-sitemap.php.html#55\">Pressbooks\\Admin\\SiteMap::addMenu<\/a>"],[100,1,"<a href=\"class-sitemap.php.html#69\">Pressbooks\\Admin\\SiteMap::renderPage<\/a>"],[86.66666666666667,5,"<a href=\"class-sitemap.php.html#89\">Pressbooks\\Admin\\SiteMap::adminBar<\/a>"],[100,4,"<a href=\"class-sitemap.php.html#129\">Pressbooks\\Admin\\SiteMap::parseAdminBarTree<\/a>"],[100,8,"<a href=\"class-sitemap.php.html#154\">Pressbooks\\Admin\\SiteMap::printAdminBarTree<\/a>"],[76,10,"<a href=\"class-sitemap.php.html#179\">Pressbooks\\Admin\\SiteMap::printMenuTree<\/a>"],[100,2,"<a href=\"delete\/class-book.php.html#19\">Pressbooks\\Admin\\Delete\\Book::init<\/a>"],[75,2,"<a href=\"delete\/class-book.php.html#27\">Pressbooks\\Admin\\Delete\\Book::hooks<\/a>"],[100,1,"<a href=\"delete\/class-book.php.html#41\">Pressbooks\\Admin\\Delete\\Book::__construct<\/a>"],[100,1,"<a href=\"delete\/class-book.php.html#47\">Pressbooks\\Admin\\Delete\\Book::addMenu<\/a>"],[100,1,"<a href=\"delete\/class-book.php.html#63\">Pressbooks\\Admin\\Delete\\Book::deleteBookEmailContent<\/a>"],[100,1,"<a href=\"network\/class-networksettings.php.html#30\">Pressbooks\\Admin\\Network\\NetworkSettings::__construct<\/a>"],[0,2,"<a href=\"network\/class-networksettings.php.html#40\">Pressbooks\\Admin\\Network\\NetworkSettings::init<\/a>"],[100,1,"<a href=\"network\/class-networksettings.php.html#51\">Pressbooks\\Admin\\Network\\NetworkSettings::hooks<\/a>"],[86.36363636363636,2,"<a href=\"network\/class-networksettings.php.html#61\">Pressbooks\\Admin\\Network\\NetworkSettings::renderCustomOptions<\/a>"],[87.5,4,"<a href=\"network\/class-networksettings.php.html#102\">Pressbooks\\Admin\\Network\\NetworkSettings::saveNetworkSettings<\/a>"],[100,2,"<a href=\"network\/class-networksettings.php.html#122\">Pressbooks\\Admin\\Network\\NetworkSettings::getDefaultTheme<\/a>"],[100,3,"<a href=\"network\/class-sharingandprivacyoptions.php.html#51\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::__construct<\/a>"],[100,6,"<a href=\"network\/class-sharingandprivacyoptions.php.html#67\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::init<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#161\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::display<\/a>"],[43.75,6,"<a href=\"network\/class-sharingandprivacyoptions.php.html#165\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::render<\/a>"],[0,3,"<a href=\"network\/class-sharingandprivacyoptions.php.html#207\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::updateBooksLastUpdatedDate<\/a>"],[0,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#224\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::networkExcludeOption<\/a>"],[0,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#233\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::excludeNonCatalogBooksFromDirectory<\/a>"],[100,4,"<a href=\"network\/class-sharingandprivacyoptions.php.html#246\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getPublicBooks<\/a>"],[100,4,"<a href=\"network\/class-sharingandprivacyoptions.php.html#285\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::excludeNonCatalogBooksFromDirectoryAction<\/a>"],[0,4,"<a href=\"network\/class-sharingandprivacyoptions.php.html#315\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::upgrade<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#340\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderAllowRedistributionField<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#358\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderAllowRootApi<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#376\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderAllowCloning<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#394\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderAllowThinCcWeblinks<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#412\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderNetworkExcludeNonCataloguedPublicBooks<\/a>"],[100,2,"<a href=\"network\/class-sharingandprivacyoptions.php.html#430\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::renderIframesWhiteList<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#449\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getSlug<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#458\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getTitle<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#467\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getDefaults<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#483\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getBooleanOptions<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#498\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::getMultilineStringOptions<\/a>"],[100,1,"<a href=\"network\/class-sharingandprivacyoptions.php.html#511\">Pressbooks\\Admin\\Network\\SharingAndPrivacyOptions::filterDefaults<\/a>"],[100,2,"<a href=\"users\/class-userbulk.php.html#39\">Pressbooks\\Admin\\Users\\UserBulk::init<\/a>"],[50,2,"<a href=\"users\/class-userbulk.php.html#50\">Pressbooks\\Admin\\Users\\UserBulk::hooks<\/a>"],[100,1,"<a href=\"users\/class-userbulk.php.html#56\">Pressbooks\\Admin\\Users\\UserBulk::__construct<\/a>"],[100,1,"<a href=\"users\/class-userbulk.php.html#63\">Pressbooks\\Admin\\Users\\UserBulk::addMenu<\/a>"],[100,3,"<a href=\"users\/class-userbulk.php.html#77\">Pressbooks\\Admin\\Users\\UserBulk::printMenu<\/a>"],[100,8,"<a href=\"users\/class-userbulk.php.html#99\">Pressbooks\\Admin\\Users\\UserBulk::bulkAddUsers<\/a>"],[100,3,"<a href=\"users\/class-userbulk.php.html#140\">Pressbooks\\Admin\\Users\\UserBulk::linkNewUserToBook<\/a>"],[100,3,"<a href=\"users\/class-userbulk.php.html#167\">Pressbooks\\Admin\\Users\\UserBulk::generateUserNameFromEmail<\/a>"],[100,2,"<a href=\"users\/class-userbulk.php.html#193\">Pressbooks\\Admin\\Users\\UserBulk::sanitizeUser<\/a>"],[93.33333333333333,8,"<a href=\"users\/class-userbulk.php.html#211\">Pressbooks\\Admin\\Users\\UserBulk::getBulkResultHtml<\/a>"],[100,4,"<a href=\"users\/class-userbulk.php.html#238\">Pressbooks\\Admin\\Users\\UserBulk::getBulkMessageSubtitle<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

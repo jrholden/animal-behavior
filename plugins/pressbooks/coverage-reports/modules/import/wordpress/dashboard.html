@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/modules/import/wordpress</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">modules</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">import</a></li>
+         <li class="breadcrumb-item"><a href="index.html">wordpress</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-parser.php.html#14">Pressbooks\Modules\Import\WordPress\Parser</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="class-wxr.php.html#20">Pressbooks\Modules\Import\WordPress\Wxr</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="class-downloads.php.html#15">Pressbooks\Modules\Import\WordPress\Downloads</a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-wxr.php.html#20">Pressbooks\Modules\Import\WordPress\Wxr</a></td><td class="text-right">224</td></tr>
+       <tr><td><a href="class-downloads.php.html#15">Pressbooks\Modules\Import\WordPress\Downloads</a></td><td class="text-right">60</td></tr>
+       <tr><td><a href="class-parser.php.html#14">Pressbooks\Modules\Import\WordPress\Parser</a></td><td class="text-right">47</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-wxr.php.html#840"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="class-wxr.php.html#79"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::__construct">__construct</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="class-wxr.php.html#824"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-wxr.php.html#537"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::bookInfoPid">bookInfoPid</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="class-wxr.php.html#588"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importPbPostMeta">importPbPostMeta</abbr></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="class-parser.php.html#22"><abbr title="Pressbooks\Modules\Import\WordPress\Parser::parse">parse</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="class-downloads.php.html#101"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="class-downloads.php.html#295"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="class-wxr.php.html#125"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="class-wxr.php.html#432"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::pbCheck">pbCheck</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="class-wxr.php.html#692"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::searchForMetaValue">searchForMetaValue</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="class-wxr.php.html#887"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::figureOutDataModel">figureOutDataModel</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="class-wxr.php.html#209"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::saveMeta">saveMeta</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="class-wxr.php.html#627"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importMetaBoxes">importMetaBoxes</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="class-downloads.php.html#249"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-parser.php.html#22"><abbr title="Pressbooks\Modules\Import\WordPress\Parser::parse">parse</abbr></a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="class-wxr.php.html#840"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">26</td></tr>
+       <tr><td><a href="class-wxr.php.html#627"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importMetaBoxes">importMetaBoxes</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="class-downloads.php.html#101"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="class-wxr.php.html#588"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importPbPostMeta">importPbPostMeta</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="class-downloads.php.html#295"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="class-wxr.php.html#125"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="class-wxr.php.html#432"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::pbCheck">pbCheck</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="class-wxr.php.html#209"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::saveMeta">saveMeta</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-downloads.php.html#249"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-wxr.php.html#887"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::figureOutDataModel">figureOutDataModel</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-wxr.php.html#824"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-wxr.php.html#692"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::searchForMetaValue">searchForMetaValue</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-wxr.php.html#79"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-wxr.php.html#537"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::bookInfoPid">bookInfoPid</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,1,0,2,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,1,0,0,1,2,2,3,6,4,15], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[83.80281690140845,50,"<a href=\"class-downloads.php.html#15\">Pressbooks\\Modules\\Import\\WordPress\\Downloads<\/a>"],[69.71830985915493,27,"<a href=\"class-parser.php.html#14\">Pressbooks\\Modules\\Import\\WordPress\\Parser<\/a>"],[83.60128617363344,139,"<a href=\"class-wxr.php.html#20\">Pressbooks\\Modules\\Import\\WordPress\\Wxr<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"class-downloads.php.html#42\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::__construct<\/a>"],[100,1,"<a href=\"class-downloads.php.html#49\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::getPregSupportedImageExtensions<\/a>"],[100,5,"<a href=\"class-downloads.php.html#60\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::scrapeAndKneadImages<\/a>"],[76.59574468085107,13,"<a href=\"class-downloads.php.html#101\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::fetchAndSaveUniqueImage<\/a>"],[90,12,"<a href=\"class-downloads.php.html#197\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::replaceImage<\/a>"],[89.47368421052632,7,"<a href=\"class-downloads.php.html#249\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::scrapeAndKneadMedia<\/a>"],[77.14285714285715,9,"<a href=\"class-downloads.php.html#295\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::fetchAndSaveUniqueMedia<\/a>"],[100,1,"<a href=\"class-downloads.php.html#368\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::basename<\/a>"],[100,1,"<a href=\"class-downloads.php.html#382\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::sameAsSource<\/a>"],[69.71830985915493,27,"<a href=\"class-parser.php.html#22\">Pressbooks\\Modules\\Import\\WordPress\\Parser::parse<\/a>"],[40,2,"<a href=\"class-wxr.php.html#79\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::__construct<\/a>"],[100,3,"<a href=\"class-wxr.php.html#94\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::dependencies<\/a>"],[100,1,"<a href=\"class-wxr.php.html#102\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::getKnownMedia<\/a>"],[100,1,"<a href=\"class-wxr.php.html#109\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::getSourceBookUrl<\/a>"],[100,1,"<a href=\"class-wxr.php.html#116\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::setSourceBookUrl<\/a>"],[78.26086956521739,8,"<a href=\"class-wxr.php.html#125\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::setCurrentImportOption<\/a>"],[100,2,"<a href=\"class-wxr.php.html#193\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::saveTerm<\/a>"],[87.5,7,"<a href=\"class-wxr.php.html#209\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::saveMeta<\/a>"],[100,2,"<a href=\"class-wxr.php.html#230\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::insertTerm<\/a>"],[93.67088607594937,22,"<a href=\"class-wxr.php.html#248\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::import<\/a>"],[84.21052631578947,8,"<a href=\"class-wxr.php.html#432\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::pbCheck<\/a>"],[92.85714285714286,16,"<a href=\"class-wxr.php.html#469\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::customNestedSort<\/a>"],[57.14285714285714,2,"<a href=\"class-wxr.php.html#537\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::bookInfoPid<\/a>"],[100,3,"<a href=\"class-wxr.php.html#565\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::insertNewPost<\/a>"],[64.70588235294117,8,"<a href=\"class-wxr.php.html#588\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::importPbPostMeta<\/a>"],[87.5,15,"<a href=\"class-wxr.php.html#627\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::importMetaBoxes<\/a>"],[85.71428571428571,4,"<a href=\"class-wxr.php.html#692\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::searchForMetaValue<\/a>"],[100,4,"<a href=\"class-wxr.php.html#717\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::searchMultipleContributorValues<\/a>"],[95,9,"<a href=\"class-wxr.php.html#738\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::buildListOfKnownMedia<\/a>"],[100,6,"<a href=\"class-wxr.php.html#778\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::createMediaEntity<\/a>"],[100,1,"<a href=\"class-wxr.php.html#810\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::createTransition<\/a>"],[50,3,"<a href=\"class-wxr.php.html#824\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::checkInternalShortcodes<\/a>"],[16.666666666666664,6,"<a href=\"class-wxr.php.html#840\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::fixInternalShortcodes<\/a>"],[85.71428571428571,5,"<a href=\"class-wxr.php.html#887\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::figureOutDataModel<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

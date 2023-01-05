@@ -1,0 +1,28 @@
+{
+    "name": "pressbooks/mix",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pressbooks (Book Oven Inc.)",
+            "email": "code@pressbooks.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "pressbooks/coding-standards": "^1.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "PressbooksMix\\": "inc/"
+      }
+    },
+  "scripts": {
+    "standards": [
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml ."
+    ],
+    "fix": [
+      "vendor/bin/phpcbf --standard=phpcs.ruleset.xml ."
+    ]
+  }
+}

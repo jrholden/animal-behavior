@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/modules/import</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">modules</a></li>
+         <li class="breadcrumb-item"><a href="index.html">import</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="epub/class-epub201.php.html#15">Pressbooks\Modules\Import\Epub\Epub201</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#15">Pressbooks\Modules\Import\Html\Xhtml</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#13">Pressbooks\Modules\Import\Odf\Odt</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#22">Pressbooks\Modules\Import\Import</a></td><td class="text-right">13%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#14">Pressbooks\Modules\Import\Ooxml\Docx</a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="wordpress/class-parser.php.html#14">Pressbooks\Modules\Import\WordPress\Parser</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#20">Pressbooks\Modules\Import\WordPress\Wxr</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#15">Pressbooks\Modules\Import\WordPress\Downloads</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="api/class-api.php.html#14">Pressbooks\Modules\Import\Api\Api</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-import.php.html#22">Pressbooks\Modules\Import\Import</a></td><td class="text-right">6485</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#15">Pressbooks\Modules\Import\Epub\Epub201</a></td><td class="text-right">5700</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#13">Pressbooks\Modules\Import\Odf\Odt</a></td><td class="text-right">3540</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#15">Pressbooks\Modules\Import\Html\Xhtml</a></td><td class="text-right">3080</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#14">Pressbooks\Modules\Import\Ooxml\Docx</a></td><td class="text-right">1689</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#20">Pressbooks\Modules\Import\WordPress\Wxr</a></td><td class="text-right">224</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#15">Pressbooks\Modules\Import\WordPress\Downloads</a></td><td class="text-right">60</td></tr>
+       <tr><td><a href="wordpress/class-parser.php.html#14">Pressbooks\Modules\Import\WordPress\Parser</a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="api/class-api.php.html#14">Pressbooks\Modules\Import\Api\Api</a></td><td class="text-right">45</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-import.php.html#208"><abbr title="Pressbooks\Modules\Import\Import::properImageExtension">properImageExtension</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#219"><abbr title="Pressbooks\Modules\Import\Import::tidy">tidy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#236"><abbr title="Pressbooks\Modules\Import\Import::formSubmit">formSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#289"><abbr title="Pressbooks\Modules\Import\Import::doImportGenerator">doImportGenerator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#390"><abbr title="Pressbooks\Modules\Import\Import::setImportOptions">setImportOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#516"><abbr title="Pressbooks\Modules\Import\Import::hasApi">hasApi</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#532"><abbr title="Pressbooks\Modules\Import\Import::createFileFromUrl">createFileFromUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#616"><abbr title="Pressbooks\Modules\Import\Import::isUrlSmallerThanUploadMaxSize">isUrlSmallerThanUploadMaxSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-import.php.html#666"><abbr title="Pressbooks\Modules\Import\Import::log">log</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#57"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#72"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#134"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::import">import</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#151"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::importGenerator">importGenerator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#176"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseMetadata">parseMetadata</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#205"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseManifestGenerator">parseManifestGenerator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#227"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::selectedForImport">selectedForImport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#265"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::getOpf">getOpf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#285"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::setCurrentZip">setCurrentZip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#309"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::getZipContent">getZipContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#338"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#374"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::tidy">tidy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#398"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::kneadHtml">kneadHtml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#424"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::regexSearchReplace">regexSearchReplace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#451"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::pbCheck">pbCheck</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#475"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#506"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#590"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::kneadHref">kneadHref</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#602"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseManifestToArray">parseManifestToArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#22"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#36"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::import">import</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#81"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#142"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::extractCCLicense">extractCCLicense</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#173"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::getLicenseAttribution">getLicenseAttribution</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#195"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::getAuthors">getAuthors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#227"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::regexSearchReplace">regexSearchReplace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#276"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::kneadHtml">kneadHtml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#296"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::scrapeAndKneadMeta">scrapeAndKneadMeta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#329"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#366"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#439"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#479"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::tidy">tidy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#35"><abbr title="Pressbooks\Modules\Import\Odf\Odt::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#52"><abbr title="Pressbooks\Modules\Import\Odf\Odt::import">import</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#97"><abbr title="Pressbooks\Modules\Import\Odf\Odt::parseMetaData">parseMetaData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#114"><abbr title="Pressbooks\Modules\Import\Odf\Odt::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#146"><abbr title="Pressbooks\Modules\Import\Odf\Odt::kneadHTML">kneadHTML</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#176"><abbr title="Pressbooks\Modules\Import\Odf\Odt::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#206"><abbr title="Pressbooks\Modules\Import\Odf\Odt::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#279"><abbr title="Pressbooks\Modules\Import\Odf\Odt::tidy">tidy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#303"><abbr title="Pressbooks\Modules\Import\Odf\Odt::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#331"><abbr title="Pressbooks\Modules\Import\Odf\Odt::isValidZip">isValidZip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#354"><abbr title="Pressbooks\Modules\Import\Odf\Odt::findTheNode">findTheNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#396"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getChapter">getChapter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#451"><abbr title="Pressbooks\Modules\Import\Odf\Odt::parseContent">parseContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#482"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getFuzzyChapterTitles">getFuzzyChapterTitles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#524"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getZipContent">getZipContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#315"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#347"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::kneadXML">kneadXML</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#382"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#410"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#494"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::parseContent">parseContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#529"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::getChapter">getChapter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#588"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::addHyperlinks">addHyperlinks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#620"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::addFootnotes">addFootnotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#722"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::findTheNode">findTheNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#981"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::tidy">tidy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#840"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#74"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::__construct">__construct</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#79"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::__construct">__construct</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="api/class-api.php.html#96"><abbr title="Pressbooks\Modules\Import\Api\Api::import">import</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#824"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-import.php.html#634"><abbr title="Pressbooks\Modules\Import\Import::isFormSubmission">isFormSubmission</abbr></a></td><td class="text-right">55%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#537"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::bookInfoPid">bookInfoPid</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#588"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importPbPostMeta">importPbPostMeta</abbr></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#934"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::getZipContent">getZipContent</abbr></a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="wordpress/class-parser.php.html#22"><abbr title="Pressbooks\Modules\Import\WordPress\Parser::parse">parse</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="class-import.php.html#177"><abbr title="Pressbooks\Modules\Import\Import::determinePostType">determinePostType</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#90"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::import">import</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="class-import.php.html#151"><abbr title="Pressbooks\Modules\Import\Import::flaggedForImport">flaggedForImport</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#101"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#295"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#125"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="api/class-api.php.html#29"><abbr title="Pressbooks\Modules\Import\Api\Api::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#432"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::pbCheck">pbCheck</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#692"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::searchForMetaValue">searchForMetaValue</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#887"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::figureOutDataModel">figureOutDataModel</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#209"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::saveMeta">saveMeta</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#627"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importMetaBoxes">importMetaBoxes</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="api/class-api.php.html#114"><abbr title="Pressbooks\Modules\Import\Api\Api::importGenerator">importGenerator</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#838"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::isValidZip">isValidZip</abbr></a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#249"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-import.php.html#390"><abbr title="Pressbooks\Modules\Import\Import::setImportOptions">setImportOptions</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="class-import.php.html#289"><abbr title="Pressbooks\Modules\Import\Import::doImportGenerator">doImportGenerator</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="class-import.php.html#236"><abbr title="Pressbooks\Modules\Import\Import::formSubmit">formSubmit</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#506"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="class-import.php.html#532"><abbr title="Pressbooks\Modules\Import\Import::createFileFromUrl">createFileFromUrl</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#410"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#366"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#354"><abbr title="Pressbooks\Modules\Import\Odf\Odt::findTheNode">findTheNode</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#722"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::findTheNode">findTheNode</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#72"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#227"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::selectedForImport">selectedForImport</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#81"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#206"><abbr title="Pressbooks\Modules\Import\Odf\Odt::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#602"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseManifestToArray">parseManifestToArray</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#396"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getChapter">getChapter</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#529"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::getChapter">getChapter</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="wordpress/class-parser.php.html#22"><abbr title="Pressbooks\Modules\Import\WordPress\Parser::parse">parse</abbr></a></td><td class="text-right">47</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#176"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseMetadata">parseMetadata</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#195"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::getAuthors">getAuthors</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#524"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getZipContent">getZipContent</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#588"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::addHyperlinks">addHyperlinks</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#451"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::pbCheck">pbCheck</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#36"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::import">import</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#142"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::extractCCLicense">extractCCLicense</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#227"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::regexSearchReplace">regexSearchReplace</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#52"><abbr title="Pressbooks\Modules\Import\Odf\Odt::import">import</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#840"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">26</td></tr>
+       <tr><td><a href="api/class-api.php.html#114"><abbr title="Pressbooks\Modules\Import\Api\Api::importGenerator">importGenerator</abbr></a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#338"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#296"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::scrapeAndKneadMeta">scrapeAndKneadMeta</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#329"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#451"><abbr title="Pressbooks\Modules\Import\Odf\Odt::parseContent">parseContent</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#494"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::parseContent">parseContent</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#620"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::addFootnotes">addFootnotes</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#627"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importMetaBoxes">importMetaBoxes</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#101"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="api/class-api.php.html#29"><abbr title="Pressbooks\Modules\Import\Api\Api::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#90"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::import">import</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="class-import.php.html#666"><abbr title="Pressbooks\Modules\Import\Import::log">log</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#134"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::import">import</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#285"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::setCurrentZip">setCurrentZip</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#309"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::getZipContent">getZipContent</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#475"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#439"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#176"><abbr title="Pressbooks\Modules\Import\Odf\Odt::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#331"><abbr title="Pressbooks\Modules\Import\Odf\Odt::isValidZip">isValidZip</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#482"><abbr title="Pressbooks\Modules\Import\Odf\Odt::getFuzzyChapterTitles">getFuzzyChapterTitles</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#347"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::kneadXML">kneadXML</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#382"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::scrapeAndKneadImages">scrapeAndKneadImages</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#588"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::importPbPostMeta">importPbPostMeta</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#295"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#125"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#432"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::pbCheck">pbCheck</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="class-import.php.html#634"><abbr title="Pressbooks\Modules\Import\Import::isFormSubmission">isFormSubmission</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#934"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::getZipContent">getZipContent</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#209"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::saveMeta">saveMeta</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="wordpress/class-downloads.php.html#249"><abbr title="Pressbooks\Modules\Import\WordPress\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-import.php.html#516"><abbr title="Pressbooks\Modules\Import\Import::hasApi">hasApi</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-import.php.html#616"><abbr title="Pressbooks\Modules\Import\Import::isUrlSmallerThanUploadMaxSize">isUrlSmallerThanUploadMaxSize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#57"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#151"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::importGenerator">importGenerator</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#205"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::parseManifestGenerator">parseManifestGenerator</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#265"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::getOpf">getOpf</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="epub/class-epub201.php.html#424"><abbr title="Pressbooks\Modules\Import\Epub\Epub201::regexSearchReplace">regexSearchReplace</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#22"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="html/class-xhtml.php.html#173"><abbr title="Pressbooks\Modules\Import\Html\Xhtml::getLicenseAttribution">getLicenseAttribution</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#35"><abbr title="Pressbooks\Modules\Import\Odf\Odt::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#97"><abbr title="Pressbooks\Modules\Import\Odf\Odt::parseMetaData">parseMetaData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#114"><abbr title="Pressbooks\Modules\Import\Odf\Odt::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#146"><abbr title="Pressbooks\Modules\Import\Odf\Odt::kneadHTML">kneadHTML</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="odf/class-odt.php.html#303"><abbr title="Pressbooks\Modules\Import\Odf\Odt::setCurrentImportOption">setCurrentImportOption</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#315"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::kneadAndInsert">kneadAndInsert</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-import.php.html#177"><abbr title="Pressbooks\Modules\Import\Import::determinePostType">determinePostType</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-import.php.html#151"><abbr title="Pressbooks\Modules\Import\Import::flaggedForImport">flaggedForImport</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#887"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::figureOutDataModel">figureOutDataModel</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="api/class-api.php.html#96"><abbr title="Pressbooks\Modules\Import\Api\Api::import">import</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#824"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#692"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::searchForMetaValue">searchForMetaValue</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#838"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::isValidZip">isValidZip</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="ooxml/class-docx.php.html#74"><abbr title="Pressbooks\Modules\Import\Ooxml\Docx::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#79"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="wordpress/class-wxr.php.html#537"><abbr title="Pressbooks\Modules\Import\WordPress\Wxr::bookInfoPid">bookInfoPid</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,0,1,0,0,0,1,1,0,3,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([66,0,1,0,0,2,4,3,6,9,9,29], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[85.96491228070175,41,"<a href=\"api\/class-api.php.html#14\">Pressbooks\\Modules\\Import\\Api\\Api<\/a>"],[13.88888888888889,100,"<a href=\"class-import.php.html#22\">Pressbooks\\Modules\\Import\\Import<\/a>"],[100,0,"<a href=\"class-importgenerator.php.html#9\">Pressbooks\\Modules\\Import\\ImportGenerator<\/a>"],[0,75,"<a href=\"epub\/class-epub201.php.html#15\">Pressbooks\\Modules\\Import\\Epub\\Epub201<\/a>"],[0,55,"<a href=\"html\/class-xhtml.php.html#15\">Pressbooks\\Modules\\Import\\Html\\Xhtml<\/a>"],[0,59,"<a href=\"odf\/class-odt.php.html#13\">Pressbooks\\Modules\\Import\\Odf\\Odt<\/a>"],[53.561253561253565,125,"<a href=\"ooxml\/class-docx.php.html#14\">Pressbooks\\Modules\\Import\\Ooxml\\Docx<\/a>"],[83.80281690140845,50,"<a href=\"wordpress\/class-downloads.php.html#15\">Pressbooks\\Modules\\Import\\WordPress\\Downloads<\/a>"],[69.71830985915493,27,"<a href=\"wordpress\/class-parser.php.html#14\">Pressbooks\\Modules\\Import\\WordPress\\Parser<\/a>"],[83.60128617363344,139,"<a href=\"wordpress\/class-wxr.php.html#20\">Pressbooks\\Modules\\Import\\WordPress\\Wxr<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[81.81818181818183,13,"<a href=\"api\/class-api.php.html#29\">Pressbooks\\Modules\\Import\\Api\\Api::setCurrentImportOption<\/a>"],[50,3,"<a href=\"api\/class-api.php.html#96\">Pressbooks\\Modules\\Import\\Api\\Api::import<\/a>"],[88.70967741935483,21,"<a href=\"api\/class-api.php.html#114\">Pressbooks\\Modules\\Import\\Api\\Api::importGenerator<\/a>"],[100,1,"<a href=\"api\/class-api.php.html#227\">Pressbooks\\Modules\\Import\\Api\\Api::isSourceCloneable<\/a>"],[91.66666666666666,3,"<a href=\"api\/class-api.php.html#239\">Pressbooks\\Modules\\Import\\Api\\Api::updatePost<\/a>"],[100,0,"<a href=\"class-import.php.html#73\">Pressbooks\\Modules\\Import\\Import::setCurrentImportOption<\/a>"],[100,0,"<a href=\"class-import.php.html#80\">Pressbooks\\Modules\\Import\\Import::import<\/a>"],[100,1,"<a href=\"class-import.php.html#87\">Pressbooks\\Modules\\Import\\Import::revokeCurrentImport<\/a>"],[100,4,"<a href=\"class-import.php.html#94\">Pressbooks\\Modules\\Import\\Import::_revokeCurrentImport<\/a>"],[100,1,"<a href=\"class-import.php.html#114\">Pressbooks\\Modules\\Import\\Import::createTmpFile<\/a>"],[100,1,"<a href=\"class-import.php.html#123\">Pressbooks\\Modules\\Import\\Import::getChapterParent<\/a>"],[75,5,"<a href=\"class-import.php.html#151\">Pressbooks\\Modules\\Import\\Import::flaggedForImport<\/a>"],[70,5,"<a href=\"class-import.php.html#177\">Pressbooks\\Modules\\Import\\Import::determinePostType<\/a>"],[0,1,"<a href=\"class-import.php.html#208\">Pressbooks\\Modules\\Import\\Import::properImageExtension<\/a>"],[0,1,"<a href=\"class-import.php.html#219\">Pressbooks\\Modules\\Import\\Import::tidy<\/a>"],[0,13,"<a href=\"class-import.php.html#236\">Pressbooks\\Modules\\Import\\Import::formSubmit<\/a>"],[100,1,"<a href=\"class-import.php.html#278\">Pressbooks\\Modules\\Import\\Import::preImport<\/a>"],[0,18,"<a href=\"class-import.php.html#289\">Pressbooks\\Modules\\Import\\Import::doImportGenerator<\/a>"],[100,1,"<a href=\"class-import.php.html#381\">Pressbooks\\Modules\\Import\\Import::postImport<\/a>"],[0,26,"<a href=\"class-import.php.html#390\">Pressbooks\\Modules\\Import\\Import::setImportOptions<\/a>"],[0,2,"<a href=\"class-import.php.html#516\">Pressbooks\\Modules\\Import\\Import::hasApi<\/a>"],[0,10,"<a href=\"class-import.php.html#532\">Pressbooks\\Modules\\Import\\Import::createFileFromUrl<\/a>"],[0,2,"<a href=\"class-import.php.html#616\">Pressbooks\\Modules\\Import\\Import::isUrlSmallerThanUploadMaxSize<\/a>"],[55.55555555555556,5,"<a href=\"class-import.php.html#634\">Pressbooks\\Modules\\Import\\Import::isFormSubmission<\/a>"],[0,3,"<a href=\"class-import.php.html#666\">Pressbooks\\Modules\\Import\\Import::log<\/a>"],[100,0,"<a href=\"class-importgenerator.php.html#16\">Pressbooks\\Modules\\Import\\ImportGenerator::importGenerator<\/a>"],[0,2,"<a href=\"epub\/class-epub201.php.html#57\">Pressbooks\\Modules\\Import\\Epub\\Epub201::__construct<\/a>"],[0,8,"<a href=\"epub\/class-epub201.php.html#72\">Pressbooks\\Modules\\Import\\Epub\\Epub201::setCurrentImportOption<\/a>"],[0,3,"<a href=\"epub\/class-epub201.php.html#134\">Pressbooks\\Modules\\Import\\Epub\\Epub201::import<\/a>"],[0,2,"<a href=\"epub\/class-epub201.php.html#151\">Pressbooks\\Modules\\Import\\Epub\\Epub201::importGenerator<\/a>"],[0,6,"<a href=\"epub\/class-epub201.php.html#176\">Pressbooks\\Modules\\Import\\Epub\\Epub201::parseMetadata<\/a>"],[0,2,"<a href=\"epub\/class-epub201.php.html#205\">Pressbooks\\Modules\\Import\\Epub\\Epub201::parseManifestGenerator<\/a>"],[0,8,"<a href=\"epub\/class-epub201.php.html#227\">Pressbooks\\Modules\\Import\\Epub\\Epub201::selectedForImport<\/a>"],[0,2,"<a href=\"epub\/class-epub201.php.html#265\">Pressbooks\\Modules\\Import\\Epub\\Epub201::getOpf<\/a>"],[0,3,"<a href=\"epub\/class-epub201.php.html#285\">Pressbooks\\Modules\\Import\\Epub\\Epub201::setCurrentZip<\/a>"],[0,3,"<a href=\"epub\/class-epub201.php.html#309\">Pressbooks\\Modules\\Import\\Epub\\Epub201::getZipContent<\/a>"],[0,4,"<a href=\"epub\/class-epub201.php.html#338\">Pressbooks\\Modules\\Import\\Epub\\Epub201::kneadAndInsert<\/a>"],[0,1,"<a href=\"epub\/class-epub201.php.html#374\">Pressbooks\\Modules\\Import\\Epub\\Epub201::tidy<\/a>"],[0,1,"<a href=\"epub\/class-epub201.php.html#398\">Pressbooks\\Modules\\Import\\Epub\\Epub201::kneadHtml<\/a>"],[0,2,"<a href=\"epub\/class-epub201.php.html#424\">Pressbooks\\Modules\\Import\\Epub\\Epub201::regexSearchReplace<\/a>"],[0,5,"<a href=\"epub\/class-epub201.php.html#451\">Pressbooks\\Modules\\Import\\Epub\\Epub201::pbCheck<\/a>"],[0,3,"<a href=\"epub\/class-epub201.php.html#475\">Pressbooks\\Modules\\Import\\Epub\\Epub201::scrapeAndKneadImages<\/a>"],[0,12,"<a href=\"epub\/class-epub201.php.html#506\">Pressbooks\\Modules\\Import\\Epub\\Epub201::fetchAndSaveUniqueImage<\/a>"],[0,1,"<a href=\"epub\/class-epub201.php.html#590\">Pressbooks\\Modules\\Import\\Epub\\Epub201::kneadHref<\/a>"],[0,7,"<a href=\"epub\/class-epub201.php.html#602\">Pressbooks\\Modules\\Import\\Epub\\Epub201::parseManifestToArray<\/a>"],[0,2,"<a href=\"html\/class-xhtml.php.html#22\">Pressbooks\\Modules\\Import\\Html\\Xhtml::__construct<\/a>"],[0,5,"<a href=\"html\/class-xhtml.php.html#36\">Pressbooks\\Modules\\Import\\Html\\Xhtml::import<\/a>"],[0,8,"<a href=\"html\/class-xhtml.php.html#81\">Pressbooks\\Modules\\Import\\Html\\Xhtml::kneadAndInsert<\/a>"],[0,5,"<a href=\"html\/class-xhtml.php.html#142\">Pressbooks\\Modules\\Import\\Html\\Xhtml::extractCCLicense<\/a>"],[0,2,"<a href=\"html\/class-xhtml.php.html#173\">Pressbooks\\Modules\\Import\\Html\\Xhtml::getLicenseAttribution<\/a>"],[0,6,"<a href=\"html\/class-xhtml.php.html#195\">Pressbooks\\Modules\\Import\\Html\\Xhtml::getAuthors<\/a>"],[0,5,"<a href=\"html\/class-xhtml.php.html#227\">Pressbooks\\Modules\\Import\\Html\\Xhtml::regexSearchReplace<\/a>"],[0,1,"<a href=\"html\/class-xhtml.php.html#276\">Pressbooks\\Modules\\Import\\Html\\Xhtml::kneadHtml<\/a>"],[0,4,"<a href=\"html\/class-xhtml.php.html#296\">Pressbooks\\Modules\\Import\\Html\\Xhtml::scrapeAndKneadMeta<\/a>"],[0,4,"<a href=\"html\/class-xhtml.php.html#329\">Pressbooks\\Modules\\Import\\Html\\Xhtml::scrapeAndKneadImages<\/a>"],[0,9,"<a href=\"html\/class-xhtml.php.html#366\">Pressbooks\\Modules\\Import\\Html\\Xhtml::fetchAndSaveUniqueImage<\/a>"],[0,3,"<a href=\"html\/class-xhtml.php.html#439\">Pressbooks\\Modules\\Import\\Html\\Xhtml::setCurrentImportOption<\/a>"],[0,1,"<a href=\"html\/class-xhtml.php.html#479\">Pressbooks\\Modules\\Import\\Html\\Xhtml::tidy<\/a>"],[0,2,"<a href=\"odf\/class-odt.php.html#35\">Pressbooks\\Modules\\Import\\Odf\\Odt::__construct<\/a>"],[0,5,"<a href=\"odf\/class-odt.php.html#52\">Pressbooks\\Modules\\Import\\Odf\\Odt::import<\/a>"],[0,2,"<a href=\"odf\/class-odt.php.html#97\">Pressbooks\\Modules\\Import\\Odf\\Odt::parseMetaData<\/a>"],[0,2,"<a href=\"odf\/class-odt.php.html#114\">Pressbooks\\Modules\\Import\\Odf\\Odt::kneadAndInsert<\/a>"],[0,2,"<a href=\"odf\/class-odt.php.html#146\">Pressbooks\\Modules\\Import\\Odf\\Odt::kneadHTML<\/a>"],[0,3,"<a href=\"odf\/class-odt.php.html#176\">Pressbooks\\Modules\\Import\\Odf\\Odt::scrapeAndKneadImages<\/a>"],[0,8,"<a href=\"odf\/class-odt.php.html#206\">Pressbooks\\Modules\\Import\\Odf\\Odt::fetchAndSaveUniqueImage<\/a>"],[0,1,"<a href=\"odf\/class-odt.php.html#279\">Pressbooks\\Modules\\Import\\Odf\\Odt::tidy<\/a>"],[0,2,"<a href=\"odf\/class-odt.php.html#303\">Pressbooks\\Modules\\Import\\Odf\\Odt::setCurrentImportOption<\/a>"],[0,3,"<a href=\"odf\/class-odt.php.html#331\">Pressbooks\\Modules\\Import\\Odf\\Odt::isValidZip<\/a>"],[0,9,"<a href=\"odf\/class-odt.php.html#354\">Pressbooks\\Modules\\Import\\Odf\\Odt::findTheNode<\/a>"],[0,7,"<a href=\"odf\/class-odt.php.html#396\">Pressbooks\\Modules\\Import\\Odf\\Odt::getChapter<\/a>"],[0,4,"<a href=\"odf\/class-odt.php.html#451\">Pressbooks\\Modules\\Import\\Odf\\Odt::parseContent<\/a>"],[0,3,"<a href=\"odf\/class-odt.php.html#482\">Pressbooks\\Modules\\Import\\Odf\\Odt::getFuzzyChapterTitles<\/a>"],[0,6,"<a href=\"odf\/class-odt.php.html#524\">Pressbooks\\Modules\\Import\\Odf\\Odt::getZipContent<\/a>"],[40,2,"<a href=\"ooxml\/class-docx.php.html#74\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::__construct<\/a>"],[72.5,11,"<a href=\"ooxml\/class-docx.php.html#90\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::import<\/a>"],[100,4,"<a href=\"ooxml\/class-docx.php.html#182\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getIDs<\/a>"],[92,9,"<a href=\"ooxml\/class-docx.php.html#213\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getRelationshipPart<\/a>"],[100,6,"<a href=\"ooxml\/class-docx.php.html#277\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getFootnotesStyles<\/a>"],[0,2,"<a href=\"ooxml\/class-docx.php.html#315\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::kneadAndInsert<\/a>"],[0,3,"<a href=\"ooxml\/class-docx.php.html#347\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::kneadXML<\/a>"],[0,3,"<a href=\"ooxml\/class-docx.php.html#382\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::scrapeAndKneadImages<\/a>"],[0,10,"<a href=\"ooxml\/class-docx.php.html#410\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::fetchAndSaveUniqueImage<\/a>"],[0,4,"<a href=\"ooxml\/class-docx.php.html#494\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::parseContent<\/a>"],[0,7,"<a href=\"ooxml\/class-docx.php.html#529\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getChapter<\/a>"],[0,6,"<a href=\"ooxml\/class-docx.php.html#588\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::addHyperlinks<\/a>"],[0,4,"<a href=\"ooxml\/class-docx.php.html#620\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::addFootnotes<\/a>"],[90,13,"<a href=\"ooxml\/class-docx.php.html#646\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::addFootnotesToDOM<\/a>"],[0,9,"<a href=\"ooxml\/class-docx.php.html#722\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::findTheNode<\/a>"],[100,2,"<a href=\"ooxml\/class-docx.php.html#758\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::parseMetaData<\/a>"],[100,2,"<a href=\"ooxml\/class-docx.php.html#771\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::setCurrentImportOption<\/a>"],[93.33333333333333,3,"<a href=\"ooxml\/class-docx.php.html#796\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getFuzzyChapterTitles<\/a>"],[88.88888888888889,4,"<a href=\"ooxml\/class-docx.php.html#838\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::isValidZip<\/a>"],[90.32258064516128,14,"<a href=\"ooxml\/class-docx.php.html#869\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getTargetPath<\/a>"],[68.75,6,"<a href=\"ooxml\/class-docx.php.html#934\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::getZipContent<\/a>"],[0,1,"<a href=\"ooxml\/class-docx.php.html#981\">Pressbooks\\Modules\\Import\\Ooxml\\Docx::tidy<\/a>"],[100,1,"<a href=\"wordpress\/class-downloads.php.html#42\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::__construct<\/a>"],[100,1,"<a href=\"wordpress\/class-downloads.php.html#49\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::getPregSupportedImageExtensions<\/a>"],[100,5,"<a href=\"wordpress\/class-downloads.php.html#60\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::scrapeAndKneadImages<\/a>"],[76.59574468085107,13,"<a href=\"wordpress\/class-downloads.php.html#101\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::fetchAndSaveUniqueImage<\/a>"],[90,12,"<a href=\"wordpress\/class-downloads.php.html#197\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::replaceImage<\/a>"],[89.47368421052632,7,"<a href=\"wordpress\/class-downloads.php.html#249\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::scrapeAndKneadMedia<\/a>"],[77.14285714285715,9,"<a href=\"wordpress\/class-downloads.php.html#295\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::fetchAndSaveUniqueMedia<\/a>"],[100,1,"<a href=\"wordpress\/class-downloads.php.html#368\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::basename<\/a>"],[100,1,"<a href=\"wordpress\/class-downloads.php.html#382\">Pressbooks\\Modules\\Import\\WordPress\\Downloads::sameAsSource<\/a>"],[69.71830985915493,27,"<a href=\"wordpress\/class-parser.php.html#22\">Pressbooks\\Modules\\Import\\WordPress\\Parser::parse<\/a>"],[40,2,"<a href=\"wordpress\/class-wxr.php.html#79\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::__construct<\/a>"],[100,3,"<a href=\"wordpress\/class-wxr.php.html#94\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::dependencies<\/a>"],[100,1,"<a href=\"wordpress\/class-wxr.php.html#102\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::getKnownMedia<\/a>"],[100,1,"<a href=\"wordpress\/class-wxr.php.html#109\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::getSourceBookUrl<\/a>"],[100,1,"<a href=\"wordpress\/class-wxr.php.html#116\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::setSourceBookUrl<\/a>"],[78.26086956521739,8,"<a href=\"wordpress\/class-wxr.php.html#125\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::setCurrentImportOption<\/a>"],[100,2,"<a href=\"wordpress\/class-wxr.php.html#193\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::saveTerm<\/a>"],[87.5,7,"<a href=\"wordpress\/class-wxr.php.html#209\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::saveMeta<\/a>"],[100,2,"<a href=\"wordpress\/class-wxr.php.html#230\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::insertTerm<\/a>"],[93.67088607594937,22,"<a href=\"wordpress\/class-wxr.php.html#248\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::import<\/a>"],[84.21052631578947,8,"<a href=\"wordpress\/class-wxr.php.html#432\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::pbCheck<\/a>"],[92.85714285714286,16,"<a href=\"wordpress\/class-wxr.php.html#469\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::customNestedSort<\/a>"],[57.14285714285714,2,"<a href=\"wordpress\/class-wxr.php.html#537\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::bookInfoPid<\/a>"],[100,3,"<a href=\"wordpress\/class-wxr.php.html#565\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::insertNewPost<\/a>"],[64.70588235294117,8,"<a href=\"wordpress\/class-wxr.php.html#588\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::importPbPostMeta<\/a>"],[87.5,15,"<a href=\"wordpress\/class-wxr.php.html#627\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::importMetaBoxes<\/a>"],[85.71428571428571,4,"<a href=\"wordpress\/class-wxr.php.html#692\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::searchForMetaValue<\/a>"],[100,4,"<a href=\"wordpress\/class-wxr.php.html#717\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::searchMultipleContributorValues<\/a>"],[95,9,"<a href=\"wordpress\/class-wxr.php.html#738\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::buildListOfKnownMedia<\/a>"],[100,6,"<a href=\"wordpress\/class-wxr.php.html#778\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::createMediaEntity<\/a>"],[100,1,"<a href=\"wordpress\/class-wxr.php.html#810\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::createTransition<\/a>"],[50,3,"<a href=\"wordpress\/class-wxr.php.html#824\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::checkInternalShortcodes<\/a>"],[16.666666666666664,6,"<a href=\"wordpress\/class-wxr.php.html#840\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::fixInternalShortcodes<\/a>"],[85.71428571428571,5,"<a href=\"wordpress\/class-wxr.php.html#887\">Pressbooks\\Modules\\Import\\WordPress\\Wxr::figureOutDataModel<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

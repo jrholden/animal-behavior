@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/cloner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="index.html">cloner</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-downloads.php.html#16">Pressbooks\Cloner\Downloads</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="class-cloner.php.html#25">Pressbooks\Cloner\Cloner</a></td><td class="text-right">72%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-cloner.php.html#25">Pressbooks\Cloner\Cloner</a></td><td class="text-right">2115</td></tr>
+       <tr><td><a href="class-downloads.php.html#16">Pressbooks\Cloner\Downloads</a></td><td class="text-right">122</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-cloner.php.html#386"><abbr title="Pressbooks\Cloner\Cloner::getTargetBookUrl">getTargetBookUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#393"><abbr title="Pressbooks\Cloner\Cloner::getTargetBookTitle">getTargetBookTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#407"><abbr title="Pressbooks\Cloner\Cloner::getKnownH5P">getKnownH5P</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#758"><abbr title="Pressbooks\Cloner\Cloner::cloneGlossary">cloneGlossary</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1243"><abbr title="Pressbooks\Cloner\Cloner::createH5PEntity">createH5PEntity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1390"><abbr title="Pressbooks\Cloner\Cloner::cloneThemeOptions">cloneThemeOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1420"><abbr title="Pressbooks\Cloner\Cloner::getSourceTheme">getSourceTheme</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1429"><abbr title="Pressbooks\Cloner\Cloner::cloneStyles">cloneStyles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-downloads.php.html#62"><abbr title="Pressbooks\Cloner\Downloads::getPregSupportedImageExtensions">getPregSupportedImageExtensions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-downloads.php.html#413"><abbr title="Pressbooks\Cloner\Downloads::h5p">h5p</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1279"><abbr title="Pressbooks\Cloner\Cloner::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1742"><abbr title="Pressbooks\Cloner\Cloner::retrieveH5P">retrieveH5P</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="class-cloner.php.html#649"><abbr title="Pressbooks\Cloner\Cloner::cloneTerm">cloneTerm</abbr></a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="class-cloner.php.html#880"><abbr title="Pressbooks\Cloner\Cloner::getBookMetadata">getBookMetadata</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1260"><abbr title="Pressbooks\Cloner\Cloner::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="class-cloner.php.html#418"><abbr title="Pressbooks\Cloner\Cloner::cloneBook">cloneBook</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-cloner.php.html#907"><abbr title="Pressbooks\Cloner\Cloner::getBookStructure">getBookStructure</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1322"><abbr title="Pressbooks\Cloner\Cloner::maybeRestoreCurrentBlog">maybeRestoreCurrentBlog</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1663"><abbr title="Pressbooks\Cloner\Cloner::locateSection">locateSection</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-cloner.php.html#549"><abbr title="Pressbooks\Cloner\Cloner::setupSource">setupSource</abbr></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1373"><abbr title="Pressbooks\Cloner\Cloner::switchTheme">switchTheme</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="class-cloner.php.html#2021"><abbr title="Pressbooks\Cloner\Cloner::validateNewBookName">validateNewBookName</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="class-downloads.php.html#113"><abbr title="Pressbooks\Cloner\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="class-cloner.php.html#765"><abbr title="Pressbooks\Cloner\Cloner::clonePostProcess">clonePostProcess</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="class-cloner.php.html#280"><abbr title="Pressbooks\Cloner\Cloner::__construct">__construct</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="class-cloner.php.html#820"><abbr title="Pressbooks\Cloner\Cloner::buildListOfKnownH5P">buildListOfKnownH5P</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1837"><abbr title="Pressbooks\Cloner\Cloner::handleGetRequest">handleGetRequest</abbr></a></td><td class="text-right">74%</td></tr>
+       <tr><td><a href="class-cloner.php.html#781"><abbr title="Pressbooks\Cloner\Cloner::buildListOfKnownMedia">buildListOfKnownMedia</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1974"><abbr title="Pressbooks\Cloner\Cloner::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="class-downloads.php.html#344"><abbr title="Pressbooks\Cloner\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1047"><abbr title="Pressbooks\Cloner\Cloner::retrieveSectionMetadata">retrieveSectionMetadata</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="class-cloner.php.html#974"><abbr title="Pressbooks\Cloner\Cloner::getBookGlossary">getBookGlossary</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1935"><abbr title="Pressbooks\Cloner\Cloner::extractLinkHeader">extractLinkHeader</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1456"><abbr title="Pressbooks\Cloner\Cloner::cloneMetadata">cloneMetadata</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="class-cloner.php.html#938"><abbr title="Pressbooks\Cloner\Cloner::getBookTerms">getBookTerms</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1335"><abbr title="Pressbooks\Cloner\Cloner::createBook">createBook</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="class-cloner.php.html#999"><abbr title="Pressbooks\Cloner\Cloner::isSourceCloneable">isSourceCloneable</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1081"><abbr title="Pressbooks\Cloner\Cloner::discoverWordPressApi">discoverWordPressApi</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1918"><abbr title="Pressbooks\Cloner\Cloner::nextWebLink">nextWebLink</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="class-cloner.php.html#436"><abbr title="Pressbooks\Cloner\Cloner::cloneBookGenerator">cloneBookGenerator</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1125"><abbr title="Pressbooks\Cloner\Cloner::isCompatible">isCompatible</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="class-cloner.php.html#1532"><abbr title="Pressbooks\Cloner\Cloner::cloneSection">cloneSection</abbr></a></td><td class="text-right">89%</td></tr>
+       <tr><td><a href="class-downloads.php.html#297"><abbr title="Pressbooks\Cloner\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-downloads.php.html#413"><abbr title="Pressbooks\Cloner\Downloads::h5p">h5p</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class-cloner.php.html#649"><abbr title="Pressbooks\Cloner\Cloner::cloneTerm">cloneTerm</abbr></a></td><td class="text-right">39</td></tr>
+       <tr><td><a href="class-cloner.php.html#1279"><abbr title="Pressbooks\Cloner\Cloner::fixInternalShortcodes">fixInternalShortcodes</abbr></a></td><td class="text-right">32</td></tr>
+       <tr><td><a href="class-cloner.php.html#1390"><abbr title="Pressbooks\Cloner\Cloner::cloneThemeOptions">cloneThemeOptions</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-cloner.php.html#1429"><abbr title="Pressbooks\Cloner\Cloner::cloneStyles">cloneStyles</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-cloner.php.html#1532"><abbr title="Pressbooks\Cloner\Cloner::cloneSection">cloneSection</abbr></a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="class-downloads.php.html#113"><abbr title="Pressbooks\Cloner\Downloads::fetchAndSaveUniqueImage">fetchAndSaveUniqueImage</abbr></a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="class-cloner.php.html#549"><abbr title="Pressbooks\Cloner\Cloner::setupSource">setupSource</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="class-cloner.php.html#436"><abbr title="Pressbooks\Cloner\Cloner::cloneBookGenerator">cloneBookGenerator</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="class-cloner.php.html#1837"><abbr title="Pressbooks\Cloner\Cloner::handleGetRequest">handleGetRequest</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="class-cloner.php.html#1456"><abbr title="Pressbooks\Cloner\Cloner::cloneMetadata">cloneMetadata</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="class-cloner.php.html#2021"><abbr title="Pressbooks\Cloner\Cloner::validateNewBookName">validateNewBookName</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="class-cloner.php.html#1742"><abbr title="Pressbooks\Cloner\Cloner::retrieveH5P">retrieveH5P</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="class-cloner.php.html#1047"><abbr title="Pressbooks\Cloner\Cloner::retrieveSectionMetadata">retrieveSectionMetadata</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="class-cloner.php.html#1243"><abbr title="Pressbooks\Cloner\Cloner::createH5PEntity">createH5PEntity</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-cloner.php.html#1663"><abbr title="Pressbooks\Cloner\Cloner::locateSection">locateSection</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="class-cloner.php.html#1081"><abbr title="Pressbooks\Cloner\Cloner::discoverWordPressApi">discoverWordPressApi</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="class-cloner.php.html#999"><abbr title="Pressbooks\Cloner\Cloner::isSourceCloneable">isSourceCloneable</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="class-downloads.php.html#344"><abbr title="Pressbooks\Cloner\Downloads::fetchAndSaveUniqueMedia">fetchAndSaveUniqueMedia</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="class-cloner.php.html#1974"><abbr title="Pressbooks\Cloner\Cloner::fixInternalLinks">fixInternalLinks</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-cloner.php.html#1935"><abbr title="Pressbooks\Cloner\Cloner::extractLinkHeader">extractLinkHeader</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-downloads.php.html#297"><abbr title="Pressbooks\Cloner\Downloads::scrapeAndKneadMedia">scrapeAndKneadMedia</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="class-cloner.php.html#1260"><abbr title="Pressbooks\Cloner\Cloner::checkInternalShortcodes">checkInternalShortcodes</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-cloner.php.html#781"><abbr title="Pressbooks\Cloner\Cloner::buildListOfKnownMedia">buildListOfKnownMedia</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-cloner.php.html#765"><abbr title="Pressbooks\Cloner\Cloner::clonePostProcess">clonePostProcess</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-cloner.php.html#1373"><abbr title="Pressbooks\Cloner\Cloner::switchTheme">switchTheme</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="class-cloner.php.html#280"><abbr title="Pressbooks\Cloner\Cloner::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#820"><abbr title="Pressbooks\Cloner\Cloner::buildListOfKnownH5P">buildListOfKnownH5P</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#418"><abbr title="Pressbooks\Cloner\Cloner::cloneBook">cloneBook</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#938"><abbr title="Pressbooks\Cloner\Cloner::getBookTerms">getBookTerms</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#1335"><abbr title="Pressbooks\Cloner\Cloner::createBook">createBook</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#1918"><abbr title="Pressbooks\Cloner\Cloner::nextWebLink">nextWebLink</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#1125"><abbr title="Pressbooks\Cloner\Cloner::isCompatible">isCompatible</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-cloner.php.html#880"><abbr title="Pressbooks\Cloner\Cloner::getBookMetadata">getBookMetadata</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-cloner.php.html#907"><abbr title="Pressbooks\Cloner\Cloner::getBookStructure">getBookStructure</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-cloner.php.html#1322"><abbr title="Pressbooks\Cloner\Cloner::maybeRestoreCurrentBlog">maybeRestoreCurrentBlog</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-cloner.php.html#974"><abbr title="Pressbooks\Cloner\Cloner::getBookGlossary">getBookGlossary</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,2,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([10,0,0,1,2,2,6,4,6,12,5,26], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[72.10682492581603,290,"<a href=\"class-cloner.php.html#25\">Pressbooks\\Cloner\\Cloner<\/a>"],[71.42857142857143,54,"<a href=\"class-downloads.php.html#16\">Pressbooks\\Cloner\\Downloads<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[69.23076923076923,4,"<a href=\"class-cloner.php.html#280\">Pressbooks\\Cloner\\Cloner::__construct<\/a>"],[100,4,"<a href=\"class-cloner.php.html#318\">Pressbooks\\Cloner\\Cloner::dependencies<\/a>"],[100,1,"<a href=\"class-cloner.php.html#329\">Pressbooks\\Cloner\\Cloner::getSourceBookUrl<\/a>"],[100,1,"<a href=\"class-cloner.php.html#336\">Pressbooks\\Cloner\\Cloner::getSourceBookId<\/a>"],[100,1,"<a href=\"class-cloner.php.html#345\">Pressbooks\\Cloner\\Cloner::getSourceBookStructure<\/a>"],[100,1,"<a href=\"class-cloner.php.html#354\">Pressbooks\\Cloner\\Cloner::getSourceBookTerms<\/a>"],[100,1,"<a href=\"class-cloner.php.html#363\">Pressbooks\\Cloner\\Cloner::getSourceBookGlossary<\/a>"],[100,1,"<a href=\"class-cloner.php.html#372\">Pressbooks\\Cloner\\Cloner::getSourceBookMetadata<\/a>"],[100,1,"<a href=\"class-cloner.php.html#379\">Pressbooks\\Cloner\\Cloner::getClonedItems<\/a>"],[0,1,"<a href=\"class-cloner.php.html#386\">Pressbooks\\Cloner\\Cloner::getTargetBookUrl<\/a>"],[0,1,"<a href=\"class-cloner.php.html#393\">Pressbooks\\Cloner\\Cloner::getTargetBookTitle<\/a>"],[100,1,"<a href=\"class-cloner.php.html#400\">Pressbooks\\Cloner\\Cloner::getKnownMedia<\/a>"],[0,1,"<a href=\"class-cloner.php.html#407\">Pressbooks\\Cloner\\Cloner::getKnownH5P<\/a>"],[50,3,"<a href=\"class-cloner.php.html#418\">Pressbooks\\Cloner\\Cloner::cloneBook<\/a>"],[87.5,17,"<a href=\"class-cloner.php.html#436\">Pressbooks\\Cloner\\Cloner::cloneBookGenerator<\/a>"],[56.81818181818182,10,"<a href=\"class-cloner.php.html#549\">Pressbooks\\Cloner\\Cloner::setupSource<\/a>"],[100,2,"<a href=\"class-cloner.php.html#633\">Pressbooks\\Cloner\\Cloner::clonePreProcess<\/a>"],[38.095238095238095,11,"<a href=\"class-cloner.php.html#649\">Pressbooks\\Cloner\\Cloner::cloneTerm<\/a>"],[100,1,"<a href=\"class-cloner.php.html#705\">Pressbooks\\Cloner\\Cloner::cloneFrontMatter<\/a>"],[100,1,"<a href=\"class-cloner.php.html#718\">Pressbooks\\Cloner\\Cloner::clonePart<\/a>"],[100,1,"<a href=\"class-cloner.php.html#732\">Pressbooks\\Cloner\\Cloner::cloneChapter<\/a>"],[100,1,"<a href=\"class-cloner.php.html#745\">Pressbooks\\Cloner\\Cloner::cloneBackMatter<\/a>"],[0,1,"<a href=\"class-cloner.php.html#758\">Pressbooks\\Cloner\\Cloner::cloneGlossary<\/a>"],[66.66666666666666,5,"<a href=\"class-cloner.php.html#765\">Pressbooks\\Cloner\\Cloner::clonePostProcess<\/a>"],[76.47058823529412,6,"<a href=\"class-cloner.php.html#781\">Pressbooks\\Cloner\\Cloner::buildListOfKnownMedia<\/a>"],[71.42857142857143,4,"<a href=\"class-cloner.php.html#820\">Pressbooks\\Cloner\\Cloner::buildListOfKnownH5P<\/a>"],[100,1,"<a href=\"class-cloner.php.html#841\">Pressbooks\\Cloner\\Cloner::createTransition<\/a>"],[100,2,"<a href=\"class-cloner.php.html#855\">Pressbooks\\Cloner\\Cloner::getBookStyles<\/a>"],[100,2,"<a href=\"class-cloner.php.html#866\">Pressbooks\\Cloner\\Cloner::getBookTheme<\/a>"],[42.857142857142854,2,"<a href=\"class-cloner.php.html#880\">Pressbooks\\Cloner\\Cloner::getBookMetadata<\/a>"],[50,2,"<a href=\"class-cloner.php.html#907\">Pressbooks\\Cloner\\Cloner::getBookStructure<\/a>"],[81.81818181818183,4,"<a href=\"class-cloner.php.html#938\">Pressbooks\\Cloner\\Cloner::getBookTerms<\/a>"],[80,2,"<a href=\"class-cloner.php.html#974\">Pressbooks\\Cloner\\Cloner::getBookGlossary<\/a>"],[85,9,"<a href=\"class-cloner.php.html#999\">Pressbooks\\Cloner\\Cloner::isSourceCloneable<\/a>"],[78.57142857142857,12,"<a href=\"class-cloner.php.html#1047\">Pressbooks\\Cloner\\Cloner::retrieveSectionMetadata<\/a>"],[85,10,"<a href=\"class-cloner.php.html#1081\">Pressbooks\\Cloner\\Cloner::discoverWordPressApi<\/a>"],[87.5,4,"<a href=\"class-cloner.php.html#1125\">Pressbooks\\Cloner\\Cloner::isCompatible<\/a>"],[100,1,"<a href=\"class-cloner.php.html#1153\">Pressbooks\\Cloner\\Cloner::getBookId<\/a>"],[100,2,"<a href=\"class-cloner.php.html#1169\">Pressbooks\\Cloner\\Cloner::getSubdomainOrSubDirectory<\/a>"],[100,2,"<a href=\"class-cloner.php.html#1193\">Pressbooks\\Cloner\\Cloner::removeDefaultBookContent<\/a>"],[100,8,"<a href=\"class-cloner.php.html#1212\">Pressbooks\\Cloner\\Cloner::createMediaEntity<\/a>"],[0,3,"<a href=\"class-cloner.php.html#1243\">Pressbooks\\Cloner\\Cloner::createH5PEntity<\/a>"],[42.857142857142854,4,"<a href=\"class-cloner.php.html#1260\">Pressbooks\\Cloner\\Cloner::checkInternalShortcodes<\/a>"],[20,7,"<a href=\"class-cloner.php.html#1279\">Pressbooks\\Cloner\\Cloner::fixInternalShortcodes<\/a>"],[50,2,"<a href=\"class-cloner.php.html#1322\">Pressbooks\\Cloner\\Cloner::maybeRestoreCurrentBlog<\/a>"],[84.21052631578947,4,"<a href=\"class-cloner.php.html#1335\">Pressbooks\\Cloner\\Cloner::createBook<\/a>"],[57.14285714285714,4,"<a href=\"class-cloner.php.html#1373\">Pressbooks\\Cloner\\Cloner::switchTheme<\/a>"],[0,5,"<a href=\"class-cloner.php.html#1390\">Pressbooks\\Cloner\\Cloner::cloneThemeOptions<\/a>"],[0,1,"<a href=\"class-cloner.php.html#1420\">Pressbooks\\Cloner\\Cloner::getSourceTheme<\/a>"],[0,5,"<a href=\"class-cloner.php.html#1429\">Pressbooks\\Cloner\\Cloner::cloneStyles<\/a>"],[81.08108108108108,15,"<a href=\"class-cloner.php.html#1456\">Pressbooks\\Cloner\\Cloner::cloneMetadata<\/a>"],[89.28571428571429,23,"<a href=\"class-cloner.php.html#1532\">Pressbooks\\Cloner\\Cloner::cloneSection<\/a>"],[50,6,"<a href=\"class-cloner.php.html#1663\">Pressbooks\\Cloner\\Cloner::locateSection<\/a>"],[95.65217391304348,5,"<a href=\"class-cloner.php.html#1687\">Pressbooks\\Cloner\\Cloner::retrieveSectionContent<\/a>"],[30,5,"<a href=\"class-cloner.php.html#1742\">Pressbooks\\Cloner\\Cloner::retrieveH5P<\/a>"],[95.65217391304348,10,"<a href=\"class-cloner.php.html#1774\">Pressbooks\\Cloner\\Cloner::cloneSectionMetadata<\/a>"],[74.28571428571429,14,"<a href=\"class-cloner.php.html#1837\">Pressbooks\\Cloner\\Cloner::handleGetRequest<\/a>"],[85.71428571428571,4,"<a href=\"class-cloner.php.html#1918\">Pressbooks\\Cloner\\Cloner::nextWebLink<\/a>"],[80,7,"<a href=\"class-cloner.php.html#1935\">Pressbooks\\Cloner\\Cloner::extractLinkHeader<\/a>"],[90.9090909090909,3,"<a href=\"class-cloner.php.html#1952\">Pressbooks\\Cloner\\Cloner::parseLinkHeader<\/a>"],[76.47058823529412,7,"<a href=\"class-cloner.php.html#1974\">Pressbooks\\Cloner\\Cloner::fixInternalLinks<\/a>"],[60.71428571428571,10,"<a href=\"class-cloner.php.html#2021\">Pressbooks\\Cloner\\Cloner::validateNewBookName<\/a>"],[100,1,"<a href=\"class-cloner.php.html#2065\">Pressbooks\\Cloner\\Cloner::isEnabled<\/a>"],[100,1,"<a href=\"class-downloads.php.html#54\">Pressbooks\\Cloner\\Downloads::__construct<\/a>"],[0,1,"<a href=\"class-downloads.php.html#62\">Pressbooks\\Cloner\\Downloads::getPregSupportedImageExtensions<\/a>"],[90.9090909090909,4,"<a href=\"class-downloads.php.html#75\">Pressbooks\\Cloner\\Downloads::scrapeAndKneadImages<\/a>"],[62.7906976744186,12,"<a href=\"class-downloads.php.html#113\">Pressbooks\\Cloner\\Downloads::fetchAndSaveUniqueImage<\/a>"],[100,1,"<a href=\"class-downloads.php.html#199\">Pressbooks\\Cloner\\Downloads::sameAsSource<\/a>"],[100,1,"<a href=\"class-downloads.php.html#210\">Pressbooks\\Cloner\\Downloads::basename<\/a>"],[100,1,"<a href=\"class-downloads.php.html#224\">Pressbooks\\Cloner\\Downloads::createMediaPatch<\/a>"],[90,12,"<a href=\"class-downloads.php.html#243\">Pressbooks\\Cloner\\Downloads::replaceImage<\/a>"],[89.47368421052632,7,"<a href=\"class-downloads.php.html#297\">Pressbooks\\Cloner\\Downloads::scrapeAndKneadMedia<\/a>"],[78.125,8,"<a href=\"class-downloads.php.html#344\">Pressbooks\\Cloner\\Downloads::fetchAndSaveUniqueMedia<\/a>"],[0,6,"<a href=\"class-downloads.php.html#413\">Pressbooks\\Cloner\\Downloads::h5p<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

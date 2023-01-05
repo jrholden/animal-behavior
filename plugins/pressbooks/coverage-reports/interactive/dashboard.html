@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/runner/work/pressbooks/pressbooks/inc/interactive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/home/runner/work/pressbooks/pressbooks/inc</a></li>
+         <li class="breadcrumb-item"><a href="index.html">interactive</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-h5p.php.html#18">Pressbooks\Interactive\H5P</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="class-content.php.html#9">Pressbooks\Interactive\Content</a></td><td class="text-right">84%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-h5p.php.html#18">Pressbooks\Interactive\H5P</a></td><td class="text-right">106</td></tr>
+       <tr><td><a href="class-content.php.html#9">Pressbooks\Interactive\Content</a></td><td class="text-right">72</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-content.php.html#110"><abbr title="Pressbooks\Interactive\Content::getPhet">getPhet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-content.php.html#398"><abbr title="Pressbooks\Interactive\Content::registerEmbedHandlers">registerEmbedHandlers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-h5p.php.html#96"><abbr title="Pressbooks\Interactive\H5P::fetch">fetch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-h5p.php.html#211"><abbr title="Pressbooks\Interactive\H5P::findAllShortcodeIds">findAllShortcodeIds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class-content.php.html#466"><abbr title="Pressbooks\Interactive\Content::overrideVideo">overrideVideo</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="class-content.php.html#496"><abbr title="Pressbooks\Interactive\Content::overrideAudio">overrideAudio</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="class-h5p.php.html#69"><abbr title="Pressbooks\Interactive\H5P::apiInit">apiInit</abbr></a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="class-content.php.html#64"><abbr title="Pressbooks\Interactive\Content::init">init</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-h5p.php.html#53"><abbr title="Pressbooks\Interactive\H5P::activate">activate</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="class-phet.php.html#65"><abbr title="Pressbooks\Interactive\Phet::setIframeCounterByPost">setIframeCounterByPost</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="class-h5p.php.html#30"><abbr title="Pressbooks\Interactive\H5P::__construct">__construct</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="class-content.php.html#380"><abbr title="Pressbooks\Interactive\Content::deleteOembedCaches">deleteOembedCaches</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="class-content.php.html#264"><abbr title="Pressbooks\Interactive\Content::replaceOembed">replaceOembed</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="class-h5p.php.html#123"><abbr title="Pressbooks\Interactive\H5P::replaceShortcode">replaceShortcode</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class-h5p.php.html#211"><abbr title="Pressbooks\Interactive\H5P::findAllShortcodeIds">findAllShortcodeIds</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class-content.php.html#466"><abbr title="Pressbooks\Interactive\Content::overrideVideo">overrideVideo</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="class-content.php.html#496"><abbr title="Pressbooks\Interactive\Content::overrideAudio">overrideAudio</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="class-h5p.php.html#69"><abbr title="Pressbooks\Interactive\H5P::apiInit">apiInit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class-h5p.php.html#123"><abbr title="Pressbooks\Interactive\H5P::replaceShortcode">replaceShortcode</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="class-h5p.php.html#53"><abbr title="Pressbooks\Interactive\H5P::activate">activate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-h5p.php.html#96"><abbr title="Pressbooks\Interactive\H5P::fetch">fetch</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class-content.php.html#264"><abbr title="Pressbooks\Interactive\Content::replaceOembed">replaceOembed</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="class-content.php.html#380"><abbr title="Pressbooks\Interactive\Content::deleteOembedCaches">deleteOembedCaches</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="class-content.php.html#64"><abbr title="Pressbooks\Interactive\Content::init">init</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-phet.php.html#65"><abbr title="Pressbooks\Interactive\Phet::setIframeCounterByPost">setIframeCounterByPost</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="class-h5p.php.html#30"><abbr title="Pressbooks\Interactive\H5P::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.18</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.25</a> and <a href="https://phpunit.de/">PHPUnit 9.5.26</a> at Sat Nov 19 17:43:14 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,1,0,1,1,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([4,0,2,0,0,1,2,1,1,3,1,24], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[84.86486486486487,60,"<a href=\"class-content.php.html#9\">Pressbooks\\Interactive\\Content<\/a>"],[63.74999999999999,38,"<a href=\"class-h5p.php.html#18\">Pressbooks\\Interactive\\H5P<\/a>"],[95,7,"<a href=\"class-phet.php.html#8\">Pressbooks\\Interactive\\Phet<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[50,2,"<a href=\"class-content.php.html#64\">Pressbooks\\Interactive\\Content::init<\/a>"],[100,1,"<a href=\"class-content.php.html#75\">Pressbooks\\Interactive\\Content::hooks<\/a>"],[100,1,"<a href=\"class-content.php.html#94\">Pressbooks\\Interactive\\Content::__construct<\/a>"],[100,1,"<a href=\"class-content.php.html#103\">Pressbooks\\Interactive\\Content::getH5P<\/a>"],[0,1,"<a href=\"class-content.php.html#110\">Pressbooks\\Interactive\\Content::getPhet<\/a>"],[97.2972972972973,12,"<a href=\"class-content.php.html#124\">Pressbooks\\Interactive\\Content::deleteIframesNotOnWhitelist<\/a>"],[100,3,"<a href=\"class-content.php.html#196\">Pressbooks\\Interactive\\Content::replaceIframes<\/a>"],[100,3,"<a href=\"class-content.php.html#233\">Pressbooks\\Interactive\\Content::allowIframesInHtml<\/a>"],[84.61538461538461,4,"<a href=\"class-content.php.html#264\">Pressbooks\\Interactive\\Content::replaceOembed<\/a>"],[100,6,"<a href=\"class-content.php.html#302\">Pressbooks\\Interactive\\Content::replaceInteractiveTags<\/a>"],[100,1,"<a href=\"class-content.php.html#362\">Pressbooks\\Interactive\\Content::addExtraOembedProviders<\/a>"],[80,3,"<a href=\"class-content.php.html#380\">Pressbooks\\Interactive\\Content::deleteOembedCaches<\/a>"],[0,1,"<a href=\"class-content.php.html#398\">Pressbooks\\Interactive\\Content::registerEmbedHandlers<\/a>"],[100,1,"<a href=\"class-content.php.html#405\">Pressbooks\\Interactive\\Content::beforeExport<\/a>"],[100,2,"<a href=\"class-content.php.html#417\">Pressbooks\\Interactive\\Content::overrideH5P<\/a>"],[100,1,"<a href=\"class-content.php.html#426\">Pressbooks\\Interactive\\Content::overridePhet<\/a>"],[100,2,"<a href=\"class-content.php.html#434\">Pressbooks\\Interactive\\Content::overrideIframes<\/a>"],[100,1,"<a href=\"class-content.php.html#446\">Pressbooks\\Interactive\\Content::overrideEmbeds<\/a>"],[16.666666666666664,4,"<a href=\"class-content.php.html#466\">Pressbooks\\Interactive\\Content::overrideVideo<\/a>"],[16.666666666666664,4,"<a href=\"class-content.php.html#496\">Pressbooks\\Interactive\\Content::overrideAudio<\/a>"],[100,2,"<a href=\"class-content.php.html#526\">Pressbooks\\Interactive\\Content::getTitle<\/a>"],[100,3,"<a href=\"class-content.php.html#541\">Pressbooks\\Interactive\\Content::adjustOembeds<\/a>"],[100,1,"<a href=\"class-content.php.html#566\">Pressbooks\\Interactive\\Content::mediaElementConfiguration<\/a>"],[75,2,"<a href=\"class-h5p.php.html#30\">Pressbooks\\Interactive\\H5P::__construct<\/a>"],[100,2,"<a href=\"class-h5p.php.html#43\">Pressbooks\\Interactive\\H5P::isActive<\/a>"],[50,4,"<a href=\"class-h5p.php.html#53\">Pressbooks\\Interactive\\H5P::activate<\/a>"],[44.44444444444444,6,"<a href=\"class-h5p.php.html#69\">Pressbooks\\Interactive\\H5P::apiInit<\/a>"],[0,2,"<a href=\"class-h5p.php.html#96\">Pressbooks\\Interactive\\H5P::fetch<\/a>"],[100,1,"<a href=\"class-h5p.php.html#108\">Pressbooks\\Interactive\\H5P::override<\/a>"],[85,10,"<a href=\"class-h5p.php.html#123\">Pressbooks\\Interactive\\H5P::replaceShortcode<\/a>"],[100,5,"<a href=\"class-h5p.php.html#177\">Pressbooks\\Interactive\\H5P::replaceUncloneable<\/a>"],[0,5,"<a href=\"class-h5p.php.html#211\">Pressbooks\\Interactive\\H5P::findAllShortcodeIds<\/a>"],[100,1,"<a href=\"class-h5p.php.html#238\">Pressbooks\\Interactive\\H5P::generateCustomH5pWrapper<\/a>"],[100,1,"<a href=\"class-phet.php.html#24\">Pressbooks\\Interactive\\Phet::__construct<\/a>"],[100,1,"<a href=\"class-phet.php.html#31\">Pressbooks\\Interactive\\Phet::registerEmbedHandlerForWeb<\/a>"],[100,1,"<a href=\"class-phet.php.html#48\">Pressbooks\\Interactive\\Phet::applyEmbedFilterForWeb<\/a>"],[66.66666666666666,2,"<a href=\"class-phet.php.html#65\">Pressbooks\\Interactive\\Phet::setIframeCounterByPost<\/a>"],[100,1,"<a href=\"class-phet.php.html#76\">Pressbooks\\Interactive\\Phet::registerEmbedHandlerForExport<\/a>"],[100,1,"<a href=\"class-phet.php.html#93\">Pressbooks\\Interactive\\Phet::applyEmbedFilterForExport<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

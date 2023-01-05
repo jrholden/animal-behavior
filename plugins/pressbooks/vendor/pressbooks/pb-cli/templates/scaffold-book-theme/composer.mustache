@@ -1,0 +1,18 @@
+{
+    "name": "{{vendor}}/{{slug}}",
+  	{{#has_description}}"description": "{{description}}",{{/has_description}}
+    "type": "wordpress-theme",
+    {{#has_spdx_license}}"license": "{{spdx_license}}",{{/has_spdx_license}}
+    {{#has_author}}"authors": [
+        {
+            "name": "{{author}}"{{#has_author_uri}},
+            "homepage": "{{author_uri}}"{{/has_author_uri}}
+        }
+    ],{{/has_author}}
+    "require": {
+      "composer/installers": "~1.5"
+    },
+    "require-dev": {
+      "humanmade/coding-standards": "^0.3.0"
+    }
+}
