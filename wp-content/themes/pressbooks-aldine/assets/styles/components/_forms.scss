@@ -1,0 +1,121 @@
+label {
+  margin: 0 0 1rem;
+  font-family: $font-family-sans-serif;
+}
+
+textarea {
+  height: 7.5em;
+  resize: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  flex-grow: 1;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid 2px var(--body-text);
+  border-radius: 0;
+  padding: 0 0 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $font-family-sans-serif;
+  background: transparent;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    border-bottom: solid 2px var(--accent);
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.form {
+  max-width: rem(354);
+  width: calc(100% - 2rem);
+
+  ::placeholder {
+    color: var(--black);
+  }
+
+  &__notice {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--error {
+      color: var(--error);
+    }
+
+    &--success {
+      color: var(--success);
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+
+    label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.2s;
+      line-height: 1;
+    }
+
+    input,
+    textarea {
+      &:focus,
+      &:valid,
+      &.error {
+        + label {
+          top: 100%;
+          margin-top: -1.125rem;
+          font-size: 0.75rem;
+        }
+      }
+
+      &.error {
+        border-bottom: solid 2px var(--error);
+
+        + label {
+          color: var(--error);
+        }
+      }
+    }
+
+    &:last-child {
+      margin-top: rem(48);
+    }
+  }
+}
+
+// Contact form
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: rem(65) 0 rem(120);
+  background: var(--body-bg-alt);
+
+  h2 {
+    margin-bottom: rem(40);
+  }
+}

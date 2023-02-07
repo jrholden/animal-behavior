@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset>
+  <!-- Scan only PHP files -->
+  <arg name="extensions" value="php"/>
+
+  <!-- Show colors in console -->
+  <arg value="-colors"/>
+
+  <!-- Show progress -->
+  <arg value="p"/>
+
+  <!-- Use Pressbooks Coding Standards -->
+  <rule ref="vendor/pressbooks/coding-standards">
+    <!-- Disable rules Pressbooks disagrees with -->
+    <exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+    <exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase"/>
+    <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
+    <exclude name="WordPress.Files.FileName"/>
+    <exclude name="HM.Files.ClassFileName.MismatchedName"/>
+    <exclude name="Squiz.Commenting"/>
+    <exclude name="Generic.Commenting.DocComment.MissingShort"/>
+  </rule>
+
+  <!-- Re-enable rules Pressbooks agrees with -->
+  <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+  <rule ref="PSR1.Methods.CamelCapsMethodName" />
+
+  <!-- Disable Side Effects rule for the bootstrapping file and those where we have to include WordPress core files. -->
+  <rule ref="PSR1.Files.SideEffects">
+    <exclude-pattern>/pressbooks-cg.php</exclude-pattern>
+  </rule>
+
+</ruleset>

@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
+
+echo "Removing trailing whitespace..."
+find lib -name "*.php" -type f -exec sed -E -i '' 's/[[:space:]]+$//g' {} +
+
+# for reasons unclear there was a change between swagger 2.1 and 2.2 that causes
+# some, but not all namespaces to be doubled up.
+# There's some info here: https://github.com/swagger-api/swagger-codegen/pull/4633
+echo "Undoing double namespaces..."
+find lib -name "*.php" -type f -exec sed -E -i '' 's/DocRaptor\\DocRaptor/DocRaptor/g' {} +
+
+echo "Cleaning up composer.json"
+cat composer.json |
+  jq '{name: "docraptor/docraptor"} + .' |
+  jq '.keywords = [ "docraptor", "api", "pdf", "xls", "xlsx", "html" ]' |
+  jq '.homepage = "https://github.com/docraptor/docraptor-php"' |
+  jq '.license = "MIT"' |
+  jq '.authors = [{}]' |
+  jq '.authors[].name = "Expected Behavior"' |
+  jq '.authors[].homepage = "https://github.com/expectedbehavior"' |
+  cat > composer.json.tmp
+mv composer.json.tmp composer.json
+
+echo "Removing generated (empty) test files"
+rm -rv test/Api/ test/Model/
+
+if compgen -G "patches/*.patch" > /dev/null; then
+  echo "Apply patches to generated code"
+  git apply --verbose patches/*.patch
+fi

@@ -1,0 +1,18 @@
+language: php
+php:
+  - "7.3"
+  - "7.2"
+  - "7.1"
+
+install: composer install
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpstan.phar analyse -l max -c phpstan.neon src --no-interaction --no-progress
+
+
+notifications:
+  recipients:
+    - david.gorges@leaphub.de
+  on_success: change
+  on_failure: always

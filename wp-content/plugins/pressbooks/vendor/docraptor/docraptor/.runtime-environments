@@ -1,0 +1,11 @@
+# Versions without patch numbers will test the latest patch version. We include
+# specific patch versions to provide consistency. We include version numbers
+# without the patch version in order to automatically test the latest patch
+# version of each minor version.
+# Oldest last, because that's the default image, and we want to commit the
+# oldest composer.lock file. Newer runtimes work with older files, but not vice
+# versa.
+# TODO: have the tests also test against updated dependencies
+phpdockerio/php:8.1-cli
+phpdockerio/php:8.0-cli
+phpdockerio/php:7.4-cli

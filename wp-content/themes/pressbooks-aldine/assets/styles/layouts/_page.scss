@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  #page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content {
+    flex-grow: 1;
+
+    .entry-content a {
+      text-decoration: underline;
+    }
+
+    a.call-to-action {
+      text-decoration: none;
+    }
+  }
+}
+
+.page article {
+  margin-top: 0;
+}

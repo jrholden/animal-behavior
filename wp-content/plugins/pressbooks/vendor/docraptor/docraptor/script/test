@@ -1,0 +1,58 @@
+#!/bin/bash
+set -e
+[[ "$TRACE" == "true" ]] && set -x
+cd "$(dirname "$0")/.."
+
+echo "Clearing test output directory"
+rm -rf tmp/test_output/
+mkdir -p tmp/test_output
+
+[ -f script/build ] && script/build
+
+run_tests() {
+  runtime_env="$1"
+  if time script/docker -i "$runtime_env" /app/script/inside_container/test; then
+    tput bold    # bold text
+    tput setaf 2 # green text
+    echo "======================================"
+    echo "$runtime_env Passed"
+    echo "======================================"
+    tput sgr0    # reset to default text
+    return 0
+  else
+    tput bold    # bold text
+    tput setaf 1 # red text
+    echo "======================================"
+    echo "$runtime_env FAILED"
+    echo "======================================"
+    tput sgr0    # reset to default text
+    return 1
+  fi
+}
+
+success="true"
+
+for runtime_env in $(cat .runtime-environments | grep -v '^#'); do
+  echo
+  echo
+  echo "Testing runtime env $runtime_env"
+  run_tests "$runtime_env" || success="false"
+done
+
+if [ $success == "true" ]; then
+  tput bold    # bold text
+  tput setaf 2 # green text
+  echo "======================================"
+  echo "=      Full Test Suite Passed        ="
+  echo "======================================"
+  tput sgr0    # reset to default text
+  exit 0
+else
+  tput bold    # bold text
+  tput setaf 1 # red text
+  echo "======================================"
+  echo "=      Full Test Suite FAILED        ="
+  echo "======================================"
+  tput sgr0    # reset to default text
+  exit 1
+fi

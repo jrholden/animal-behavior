@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
+
+set -x
+
+GENERATOR_REVISION=$(cat .generator-revision 2> /dev/null || true)
+if [ "$GENERATOR_REVISION" = "" ]; then
+  echo "Set a revision of openapi-generator to use in .generator-revision"
+  exit 1
+fi
+
+docker run -it -w "/local" --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:"${GENERATOR_REVISION}" "$@"
