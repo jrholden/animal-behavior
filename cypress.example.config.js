@@ -2,12 +2,12 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   env: {
-    baseUrl: 'http://localhost/animal-behavior',
-    username: 'alif',
-    password: '1234'
+    baseUrl: 'add-the-base-url-of-your-site',
+    username: 'add-an-test-username-of-admin',
+    password: 'the-password-of-the-above-admin-account'
   },
   e2e: {
-    baseUrl: 'http://localhost/animal-behavior',
+    baseUrl: 'add-the-base-url-of-your-site',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
