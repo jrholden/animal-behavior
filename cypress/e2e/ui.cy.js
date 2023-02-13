@@ -1,6 +1,7 @@
 describe('UI tests', () => {
     beforeEach( () => {
         cy.visit("/wp-login.php");
+        cy.wait(200);
         cy.get( '#user_login' ).type( Cypress.env('username'));
         cy.get( '#user_pass' ).type( Cypress.env('password') );
         cy.get( '#wp-submit' ).click();
