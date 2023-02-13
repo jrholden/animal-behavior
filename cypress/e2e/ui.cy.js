@@ -24,4 +24,12 @@ describe('UI tests', () => {
         // Pressbook plugin should be active
         cy.get('tr.active > .plugin-title > strong').contains('Pressbooks');
     })
+
+    it('should allow a user to update their profile information', () => {
+        cy.visit('/wp-admin/profile.php');
+        cy.get('#first_name').type('John');
+        cy.get('#last_name').type('Doe');
+        cy.get('#submit').click();
+        cy.contains('Profile updated').should('be.visible');
+    });
 });
