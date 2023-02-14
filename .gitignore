@@ -23,5 +23,6 @@ node_modules/
 
 # cypress
 cypress.config.js
+!cypress/cypress.config.js
 cypress/videos/*
 cypress/screenshots/*
