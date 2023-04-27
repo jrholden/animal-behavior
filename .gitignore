@@ -20,3 +20,9 @@ node_modules/
 *.sql
 *.sqlite
 .idea
+
+# cypress
+cypress.config.js
+!cypress/cypress.config.js
+cypress/videos/*
+cypress/screenshots/*
